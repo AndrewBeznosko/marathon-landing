@@ -91,22 +91,45 @@
     <section class="sec sec-2">
         <div class="container">
 
-        <div class="sec_title">
-            <h2 class="title">Актуальные марафоны</h2>
-            <div class="title_arrows">
-                <div class="arrow">&#8592;</div>
-                <div class="arrow">&#8594;</div>
+            <div class="sec_title">
+                <h2 class="title">Актуальные марафоны</h2>
+                <div class="title_arrows">
+                    <div class="arrow">&#8592;</div>
+                    <div class="arrow">&#8594;</div>
+                </div>
             </div>
-        </div>
-            <div class="row actual_marathons">
+            
+            <style>
+                .slick-prev {
+                    left: initial;
+                    right: 50px;
+                }
+                
+                .slick-next {
+                    right: 20px;
+                }
+                
+                .slick-prev, .slick-next {
+                    top: -50%;
+                    background: #000000c2;
+                }
+            </style>
+            
+            <div id="sec-2__carusel" class="row actual_marathons">
                 <div class="col-4">
-                   <div class="first">first</div> 
+                    <div class="first">first</div>
                 </div>
                 <div class="col-4">
-                    <div class="second">second</div> 
+                    <div class="second">second</div>
                 </div>
                 <div class="col-4">
-                    <div class="third">third</div> 
+                    <div class="third">third</div>
+                </div>
+                <div class="col-4">
+                    <div class="third">fourth</div>
+                </div>
+                <div class="col-4">
+                    <div class="third">fifth</div>
                 </div>
             </div>
             <!-- END row -->
@@ -151,6 +174,14 @@
             speed: 300,
             slidesToShow: 1,
             adaptiveHeight: true
+        });
+
+        $('#sec-2__carusel').slick({
+            dots: false,
+            arrow: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3
         });
     </script>
 
