@@ -1,0 +1,272 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-SemiBoldItalic.eot");
+  src: local("Open Sans SemiBold Italic"), local("OpenSans-SemiBoldItalic"), url("../fonts/OpenSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBoldItalic.woff") format("woff"), url("../fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-LightItalic.eot");
+  src: local("Open Sans Light Italic"), local("OpenSans-LightItalic"), url("../fonts/OpenSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-LightItalic.woff") format("woff"), url("../fonts/OpenSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-ExtraBoldItalic.eot");
+  src: local("Open Sans ExtraBold Italic"), local("OpenSans-ExtraBoldItalic"), url("../fonts/OpenSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-ExtraBoldItalic.woff") format("woff"), url("../fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Light.eot");
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Italic.eot");
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("../fonts/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-SemiBold.eot");
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("../fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-ExtraBold.eot");
+  src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"), url("../fonts/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-BoldItalic.eot");
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("../fonts/OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/OpenSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+/*
+================================================================================
+|                                     MAIN STYLES                              |
+================================================================================
+*/
+/* line 122, ../sass/style.scss */
+html {
+  font-size: 16px;
+}
+
+/* line 126, ../sass/style.scss */
+body {
+  font-family: 'Open Sans';
+  /*main font*/
+  font-weight: normal;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  color: #000;
+}
+
+@media (min-width: 1200px) {
+  /* line 136, ../sass/style.scss */
+  .container {
+    max-width: 1300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 142, ../sass/style.scss */
+  html {
+    font-size: 14px;
+  }
+}
+/*
+================================================================================
+|                                    ELEMENTS                                  |
+================================================================================
+*/
+/*=== responsive SECTION__TITLE ===*/
+/*
+================================================================================
+|                                    Sec-1                                     |
+================================================================================
+*/
+/* line 3, ../sass/_sec-1.scss */
+.sec-1 .container {
+  background-image: url(../img/sec-1__bg.png);
+  background-size: cover;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+/* line 14, ../sass/_sec-1.scss */
+.sec-1 .form-wrapper {
+  width: 100%;
+  background-color: #ccc;
+  padding-top: 6px;
+  border-radius: 10px;
+}
+/* line 20, ../sass/_sec-1.scss */
+.sec-1 .form-wrapper form {
+  background: #fff;
+  border-radius: inherit;
+  padding: 29px 35px;
+}
+/* line 25, ../sass/_sec-1.scss */
+.sec-1 .form-wrapper form h5 {
+  font-weight: 800;
+  margin: 0px;
+  display: inline-block;
+}
+/* line 32, ../sass/_sec-1.scss */
+.sec-1 .form-wrapper .form-row {
+  margin-top: 5px;
+}
+/* line 36, ../sass/_sec-1.scss */
+.sec-1 .form-wrapper .form-control {
+  border-radius: 0;
+  border: none;
+  border-bottom: solid 1px #ced4da;
+  padding: 4px 15px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+/* line 44, ../sass/_sec-1.scss */
+.sec-1 .form-wrapper .form-control input {
+  font-size: 18px;
+}
+/* line 49, ../sass/_sec-1.scss */
+.sec-1 .form-wrapper button {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 15px 26px;
+  margin: 0;
+  margin-top: 32px;
+}
+/* line 59, ../sass/_sec-1.scss */
+.sec-1 .form-wrapper .form-check {
+  margin-top: 30px;
+  line-height: 1.1;
+}
+/* line 63, ../sass/_sec-1.scss */
+.sec-1 .form-wrapper .form-check span {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  color: #ccc;
+}
+/* line 71, ../sass/_sec-1.scss */
+.sec-1 .content-row {
+  padding-bottom: 80px;
+}
+/* line 78, ../sass/_sec-1.scss */
+.sec-1 .carusel .item {
+  height: 400px;
+  background: #ccc;
+}
+
+/*
+================================================================================
+|                                   NAVIGATION                                 |
+================================================================================
+*/
+/* line 92, ../sass/_sec-1.scss */
+.sec-1 .navbar {
+  padding: 20px 0;
+}
+/* line 95, ../sass/_sec-1.scss */
+.sec-1 .navbar .navbar-brand img {
+  width: 225px;
+  height: auto;
+}
+/* line 100, ../sass/_sec-1.scss */
+.sec-1 .navbar .nav-link {
+  color: white;
+  font-size: 18px;
+  padding-right: 0;
+  padding-left: 34px;
+}
+
+/*
+================================================================================
+|                                    sec-2                                     |
+================================================================================
+*/
+/* line 1, ../sass/_sec-2.scss */
+.sec-2 {
+  background-color: #fafafa;
+  background-image: url("../img/sec-2-bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto 100%;
+}
+/* line 8, ../sass/_sec-2.scss */
+.sec-2__text-wrapper {
+  text-align: right;
+}
+/* line 12, ../sass/_sec-2.scss */
+.sec-2__text {
+  display: block;
+  text-align: right;
+  max-width: 670px;
+  display: inline-block;
+}
+/* line 18, ../sass/_sec-2.scss */
+.sec-2__text__1 {
+  font-family: 'Lato-LightItalic';
+  font-size: 36px;
+  color: #000;
+  margin-top: 40px;
+}
+/* line 25, ../sass/_sec-2.scss */
+.sec-2__text__2 {
+  font-family: 'Lato-Bold';
+  font-size: 48px;
+  margin: 50px 0;
+}
+/* line 31, ../sass/_sec-2.scss */
+.sec-2__text__3 {
+  font-family: 'Lato-Semibold';
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+/* line 37, ../sass/_sec-2.scss */
+.sec-2__text__4 {
+  font-family: 'Lato-LightItalic';
+  font-size: 30px;
+}
+/* line 42, ../sass/_sec-2.scss */
+.sec-2__text__5 {
+  margin: 50px 0;
+  font-size: 60px;
+  font-family: 'Lato-SemiboldItalic';
+  color: #ff1a55;
+}
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+/*=== responsive FOOTER ===*/

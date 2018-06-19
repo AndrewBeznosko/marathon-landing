@@ -1,0 +1,49 @@
+.sec-2 {
+    background-color: #fafafa; 
+    background-image: url('../img/sec-2-bg.png');  
+    background-repeat: no-repeat;
+    background-position: left; 
+    background-size: auto 100%; 
+    
+    &__text-wrapper {
+        text-align: right;
+    }
+    
+    &__text {
+        display: block;
+        text-align: right; 
+        max-width: 670px;  
+        display: inline-block;  
+        
+        &__1 {
+            font-family: 'Lato-LightItalic';
+            font-size: 36px;
+            color: #000;  
+            margin-top: 40px; 
+        }
+        
+        &__2 {
+            font-family: 'Lato-Bold';
+            font-size: 48px; 
+            margin: 50px 0; 
+        }
+        
+        &__3 {
+            font-family: 'Lato-Semibold'; 
+            font-size: 30px;
+            margin-bottom: 70px; 
+        }
+        
+        &__4 {
+            font-family: 'Lato-LightItalic'; 
+            font-size: 30px;
+        }
+        
+        &__5 {
+            margin: 50px 0; 
+            font-size: 60px;
+            font-family: 'Lato-SemiboldItalic'; 
+            color: #ff1a55;
+        }
+    }
+}

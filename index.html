@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dev_challenge_11</title>
+
+    <!-- Slick -->
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css" />
+
+    <!-- bootstrap.min.css -- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- main CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="sec sec-1">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Challengeme">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Наши марафоны</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Отзывы о нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="row justify-content-between align-items-end content-row">
+                <div class="col-4">
+                    <div class="form-wrapper">
+                        <form action="">
+                            <h5>Узнавайте первыми о  новых проектах</h5> 
+                            <div class="form-row align-items-center">
+                                <div class="col-12">
+                                    <label class="sr-only" for="inlineFormInput">Name</label>
+                                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="admin@challenge.com">
+                                </div>
+                                <div class="col-12">
+                                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="form-check mb-2" style="width: 100%">
+                                        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                        <span class="form-check-label" for="autoSizingCheck">
+                                            Подписываясь вы соглашаетесь на обработку персональных данных и ринимаете нашу политику конфиденциальности
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="carusel-wrapper">
+                        <div id="sec-1__carusel" class="carusel">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END container -->
+    </section>
+    <!-- END banner -->
+
+    <section class="sec sec-1">
+        <div class="container">
+
+
+            <div class="row">
+
+            </div>
+            <!-- END row -->
+        </div>
+        <!-- END container -->
+    </section>
+    <!-- END sec-1 -->
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- END container -->
+    </footer>
+    <!-- END footer -->
+
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <!--     bootstrap.min.js -- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!-- popper.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+    <!-- Slick -->
+    <script src="js/slick/slick.min.js"></script>
+
+    <!-- main JS -->
+    <script src="js/main.js"></script>
+
+    <script>
+        $('#sec-1__carusel').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+.sec-1 {
+    
+    .container {
+        background-image: url(../img/sec-1__bg.png);
+        background-size: cover;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    
+    .title {
+        
+    }
+    
+    .form-wrapper {
+        width: 100%;
+        background-color: #ccc;
+        padding-top: 6px;
+        border-radius: 10px;
+        
+        form {
+            background: #fff;
+            border-radius: inherit;
+            padding: 29px 35px;
+            
+            h5 {
+                font-weight: 800;   
+                margin: 0px;
+                display: inline-block;
+            }
+        }
+        
+        .form-row {
+            margin-top: 5px;
+        }
+        
+        .form-control {
+            border-radius: 0;
+            border: none;
+            border-bottom: solid 1px #ced4da; 
+            padding: 4px 15px;
+            font-size: 18px;
+            margin-top: 20px;
+            
+            input {
+                font-size: 18px; 
+            }
+        }
+        
+        button {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 10px;
+            padding: 15px 26px;
+            margin: 0;
+            margin-top: 32px;
+        }
+        
+        .form-check {
+            margin-top: 30px;
+            line-height: 1.1;
+            
+            span {
+                font-size: 12px;
+                letter-spacing: 0.7px;
+                color: #ccc;
+            }
+        }
+    }
+    
+    .content-row {
+        padding-bottom: 80px;
+    }
+    
+    
+    
+    .carusel {
+        .item {
+            height: 400px;
+            background: #ccc;
+        }
+    }
+}
+
+
+/*
+================================================================================
+|                                   NAVIGATION                                 |
+================================================================================
+*/
+
+.sec-1 .navbar {
+    padding: 20px 0;
+    
+    .navbar-brand img {
+        width: 225px; 
+        height: auto;
+    }
+    
+    .nav-link {
+        color: rgba(255,255,255,1);
+        font-size: 18px;
+        padding-right: 0;
+        padding-left: 34px;
+    }
+}
