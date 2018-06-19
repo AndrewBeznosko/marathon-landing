@@ -213,55 +213,59 @@ body {
 |                                    sec-2                                     |
 ================================================================================
 */
-/* line 1, ../sass/_sec-2.scss */
-.sec-2 {
-  background-color: #fafafa;
-  background-image: url("../img/sec-2-bg.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: auto 100%;
+/* line 3, ../sass/_sec-2.scss */
+.sec-2 .container {
+  overflow-x: hidden;
 }
-/* line 8, ../sass/_sec-2.scss */
-.sec-2__text-wrapper {
-  text-align: right;
+/* line 7, ../sass/_sec-2.scss */
+.sec-2 .sec_title {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 50px 0;
 }
 /* line 12, ../sass/_sec-2.scss */
-.sec-2__text {
+.sec-2 .sec_title h2 {
+  margin-left: 100px;
+}
+/* line 17, ../sass/_sec-2.scss */
+.sec-2 .sec_title h2::after {
   display: block;
-  text-align: right;
-  max-width: 670px;
-  display: inline-block;
+  position: relative;
+  left: -135px;
+  content: "";
+  width: 100%;
+  height: 9px;
+  background-color: #1eacc0;
 }
-/* line 18, ../sass/_sec-2.scss */
-.sec-2__text__1 {
-  font-family: 'Lato-LightItalic';
-  font-size: 36px;
-  color: #000;
-  margin-top: 40px;
-}
-/* line 25, ../sass/_sec-2.scss */
-.sec-2__text__2 {
-  font-family: 'Lato-Bold';
-  font-size: 48px;
-  margin: 50px 0;
+/* line 27, ../sass/_sec-2.scss */
+.sec-2 .sec_title .title_arrows {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
 }
 /* line 31, ../sass/_sec-2.scss */
-.sec-2__text__3 {
-  font-family: 'Lato-Semibold';
-  font-size: 30px;
-  margin-bottom: 70px;
-}
-/* line 37, ../sass/_sec-2.scss */
-.sec-2__text__4 {
-  font-family: 'Lato-LightItalic';
-  font-size: 30px;
+.sec-2 .sec_title .title_arrows .arrow {
+  margin-left: 23px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #f1f1f1;
+  font-size: 25px;
+  line-height: 25px;
+  background-color: #cccccc;
+  text-align: center;
 }
 /* line 42, ../sass/_sec-2.scss */
-.sec-2__text__5 {
-  margin: 50px 0;
-  font-size: 60px;
-  font-family: 'Lato-SemiboldItalic';
-  color: #ff1a55;
+.sec-2 .sec_title .title_arrows .arrow:hover {
+  cursor: pointer;
+  background-color: #ae8aef;
+}
+/* line 52, ../sass/_sec-2.scss */
+.sec-2 .actual_marathons .first, .sec-2 .actual_marathons .second, .sec-2 .actual_marathons .third {
+  background-color: red;
 }
 
 /*
