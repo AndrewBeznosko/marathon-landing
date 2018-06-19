@@ -1,12 +1,4 @@
-.sec-2 {
-   
-    .container {
-        overflow-x: hidden;
-    }
-    
-    .sec_title {
-        @include d-flex;
-        @include justify-content(space-between);
+ .sec_title {
         padding: 50px 0;
         
         h2 {
@@ -17,42 +9,140 @@
         h2::after {
                 display: block;
                 position: relative;
-            left: -135px;
+                left: -570px;
                 content: "";
-                width: 100%;
+                width: 800px;
                 height: 9px;
                 background-color: #1eacc0;
             }
+       
         
-        .title_arrows {
-            @include d-flex;
         
-            
-            .arrow  {
-            margin-left: 23px;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            color: #f1f1f1;
-            font-size: 25px;
-                line-height: 25px;
-            background-color: #cccccc;
-            text-align: center;
+    }
+
+.sec-2 {
+   
+    .container {
+        padding-bottom: 50px;
+        overflow-x: hidden;
+        background-color: #f1f1f1;
+    }
+    
+
+    
+   .slick-prev {   
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    left: initial;
+                    right: 75px;
+
+       
+                    &::before {
+                                    font-family: sans-serif;
+                                }
+
+                    &:hover {
+                                    background-color: #ae8aef !important;
+                            }
+       
+                }
                 
-                &:hover {
-                    cursor: pointer;
-                    background-color: #ae8aef;
+  .slick-next {
+                    margin-left: 23px !important;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    right: 20px;
                     
+                        &::before {
+                                    font-family: sans-serif;
+                                }
+                        &:hover {
+
+                                    background-color: #ae8aef !important;
+
+                                }
                 }
-                }
-        }
+                
+                .slick-prev, .slick-next {
+                    top: -18%;
+                    background: #cccccc;
+                } 
+}
+
+.marathon_wrapper {
+    padding: 25px;
+    background-color: #bbd1ec;
+}
+
+.actual_marathons_block {
+    width: 225px;
+    margin: 0 auto;
+    color: #ffffff;
+    
+    .marathons_top {
+        position: relative;
+        background-image: url(../img/marathon_bg1.png); 
+        background-size: cover;
+        padding: 100px 30px;
+        text-align: center;
     }
     
-    .actual_marathons {
-        .first,.second,.third {
-            background-color: red;
-        }
+    .cover-bg {
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       
+  -khtml-opacity: .6;
+	-moz-opacity: .6;
+		 opacity: .6;
+  
+    
+    }
+    
+    .marathons_top:hover  .cover-bg {
+        display: block;
+    }
+    
+    .marathons_bottom:hover ~ .cover-bg {
+        display: block;
     }
     
     
+    .marathons_bottom {
+        z-index: 5;
+        position: relative;
+        text-align: center;
+        padding: 10px 0 20px 0;
+        background-color: #cccccc;
+        
+        .year_date {
+            position: absolute;
+            top: -5px;
+            right: 0;
+            font-size: 58px;
+            z-index: -2;
+            color: white;
+            line-height: 1;
+        }
+        
+        .month_date{
+            margin-bottom: 50px;
+            color: #000000;
+            display: block;
+            z-index: 150;
+        }
+        
+        a {
+            display: inline-block;
+            padding: 10px 5px;
+            background-color: #294486;
+            border-radius: 8px;
+            color: #ffffff;
+        }
+    }
 }

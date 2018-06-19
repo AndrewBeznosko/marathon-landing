@@ -6,4 +6,5 @@ $(document).ready(function(){
     $(".main-header__btn").on("click", function () {
         $(".main-header").toggleClass("active");
     });
+
 });

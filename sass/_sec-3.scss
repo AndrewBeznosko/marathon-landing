@@ -1,0 +1,47 @@
+.container {
+    overflow-x: hidden;
+}
+.sec-3 {
+   
+    .container {
+        position: relative;
+         background-image: url(../img/sec-3__bg.png);
+        background-size: cover;
+        background-position: -180px center;
+        background-repeat: no-repeat;
+    }
+    
+    .text_bg {
+        top: 80px;
+        position: absolute;
+        z-index: 0;
+        font-size: 183px;
+        line-height: 1;
+        color: #cccccc;
+        font-weight: 700;
+        opacity: .2;
+        overflow: hidden;
+    }
+    
+    
+    .sec-3__info {
+        margin-bottom: 20px;
+        display: inline-block;
+        color: #ffffff;
+    }
+    
+    img {
+        position: relative;
+        bottom: 90px;
+    }
+    
+    h2.title {
+        color: #ffffff;
+    }
+    
+    h2.title::after {
+        background-color: #ffffff;
+    }
+    
+  
+}

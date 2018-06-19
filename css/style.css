@@ -213,61 +213,198 @@ body {
 |                                    sec-2                                     |
 ================================================================================
 */
-/* line 3, ../sass/_sec-2.scss */
-.sec-2 .container {
-  overflow-x: hidden;
-}
-/* line 7, ../sass/_sec-2.scss */
-.sec-2 .sec_title {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+/* line 1, ../sass/_sec-2.scss */
+.sec_title {
   padding: 50px 0;
 }
-/* line 12, ../sass/_sec-2.scss */
-.sec-2 .sec_title h2 {
+/* line 4, ../sass/_sec-2.scss */
+.sec_title h2 {
   margin-left: 100px;
 }
-/* line 17, ../sass/_sec-2.scss */
-.sec-2 .sec_title h2::after {
+/* line 9, ../sass/_sec-2.scss */
+.sec_title h2::after {
   display: block;
   position: relative;
-  left: -135px;
+  left: -570px;
   content: "";
-  width: 100%;
+  width: 800px;
   height: 9px;
   background-color: #1eacc0;
 }
-/* line 27, ../sass/_sec-2.scss */
-.sec-2 .sec_title .title_arrows {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
+
+/* line 25, ../sass/_sec-2.scss */
+.sec-2 .container {
+  padding-bottom: 50px;
+  overflow-x: hidden;
+  background-color: #f1f1f1;
 }
-/* line 31, ../sass/_sec-2.scss */
-.sec-2 .sec_title .title_arrows .arrow {
-  margin-left: 23px;
-  width: 30px;
-  height: 30px;
+/* line 33, ../sass/_sec-2.scss */
+.sec-2 .slick-prev {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  color: #f1f1f1;
-  font-size: 25px;
-  line-height: 25px;
-  background-color: #cccccc;
-  text-align: center;
+  left: initial;
+  right: 75px;
 }
-/* line 42, ../sass/_sec-2.scss */
-.sec-2 .sec_title .title_arrows .arrow:hover {
-  cursor: pointer;
-  background-color: #ae8aef;
+/* line 41, ../sass/_sec-2.scss */
+.sec-2 .slick-prev::before {
+  font-family: sans-serif;
 }
-/* line 52, ../sass/_sec-2.scss */
-.sec-2 .actual_marathons .first, .sec-2 .actual_marathons .second, .sec-2 .actual_marathons .third {
-  background-color: red;
+/* line 45, ../sass/_sec-2.scss */
+.sec-2 .slick-prev:hover {
+  background-color: #ae8aef !important;
+}
+/* line 51, ../sass/_sec-2.scss */
+.sec-2 .slick-next {
+  margin-left: 23px !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  right: 20px;
+}
+/* line 58, ../sass/_sec-2.scss */
+.sec-2 .slick-next::before {
+  font-family: sans-serif;
+}
+/* line 61, ../sass/_sec-2.scss */
+.sec-2 .slick-next:hover {
+  background-color: #ae8aef !important;
+}
+/* line 68, ../sass/_sec-2.scss */
+.sec-2 .slick-prev, .sec-2 .slick-next {
+  top: -18%;
+  background: #cccccc;
 }
 
+/* line 74, ../sass/_sec-2.scss */
+.marathon_wrapper {
+  padding: 25px;
+  background-color: #bbd1ec;
+}
+
+/* line 79, ../sass/_sec-2.scss */
+.actual_marathons_block {
+  width: 225px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+/* line 84, ../sass/_sec-2.scss */
+.actual_marathons_block .marathons_top {
+  position: relative;
+  background-image: url(../img/marathon_bg1.png);
+  background-size: cover;
+  padding: 100px 30px;
+  text-align: center;
+}
+/* line 92, ../sass/_sec-2.scss */
+.actual_marathons_block .cover-bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -khtml-opacity: .6;
+  -moz-opacity: .6;
+  opacity: .6;
+}
+/* line 107, ../sass/_sec-2.scss */
+.actual_marathons_block .marathons_top:hover .cover-bg {
+  display: block;
+}
+/* line 111, ../sass/_sec-2.scss */
+.actual_marathons_block .marathons_bottom:hover ~ .cover-bg {
+  display: block;
+}
+/* line 116, ../sass/_sec-2.scss */
+.actual_marathons_block .marathons_bottom {
+  z-index: 5;
+  position: relative;
+  text-align: center;
+  padding: 10px 0 20px 0;
+  background-color: #cccccc;
+}
+/* line 123, ../sass/_sec-2.scss */
+.actual_marathons_block .marathons_bottom .year_date {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  font-size: 58px;
+  z-index: -2;
+  color: white;
+  line-height: 1;
+}
+/* line 133, ../sass/_sec-2.scss */
+.actual_marathons_block .marathons_bottom .month_date {
+  margin-bottom: 50px;
+  color: #000000;
+  display: block;
+  z-index: 150;
+}
+/* line 140, ../sass/_sec-2.scss */
+.actual_marathons_block .marathons_bottom a {
+  display: inline-block;
+  padding: 10px 5px;
+  background-color: #294486;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+/*
+================================================================================
+|                                    sec-3                                     |
+================================================================================
+*/
+/* line 1, ../sass/_sec-3.scss */
+.container {
+  overflow-x: hidden;
+}
+
+/* line 6, ../sass/_sec-3.scss */
+.sec-3 .container {
+  position: relative;
+  background-image: url(../img/sec-3__bg.png);
+  background-size: cover;
+  background-position: -180px center;
+  background-repeat: no-repeat;
+}
+/* line 14, ../sass/_sec-3.scss */
+.sec-3 .text_bg {
+  top: 80px;
+  position: absolute;
+  z-index: 0;
+  font-size: 183px;
+  line-height: 1;
+  color: #cccccc;
+  font-weight: 700;
+  opacity: .2;
+  overflow: hidden;
+}
+/* line 27, ../sass/_sec-3.scss */
+.sec-3 .sec-3__info {
+  margin-bottom: 20px;
+  display: inline-block;
+  color: #ffffff;
+}
+/* line 33, ../sass/_sec-3.scss */
+.sec-3 img {
+  position: relative;
+  bottom: 90px;
+}
+/* line 38, ../sass/_sec-3.scss */
+.sec-3 h2.title {
+  color: #ffffff;
+}
+/* line 42, ../sass/_sec-3.scss */
+.sec-3 h2.title::after {
+  background-color: #ffffff;
+}
+
+/*
+================================================================================
+|                                    sec-4                                     |
+================================================================================
+*/
 /*
 ================================================================================
 |                                     FOOTER                                   |
