@@ -470,7 +470,7 @@ body {
   left: calc(50% + 4px);
   transform: translate(-50%, -50%);
 }
-/* line 69, ../sass/_sec-4.scss */
+/* line 67, ../sass/_sec-4.scss */
 .sec-4 .sec-4__left .sec-4__left___button {
   position: absolute;
   right: 0;
@@ -481,18 +481,18 @@ body {
   color: #ffffff;
   border-radius: 5px;
 }
-/* line 81, ../sass/_sec-4.scss */
+/* line 79, ../sass/_sec-4.scss */
 .sec-4 .sec-4__left span {
   position: absolute;
   font-size: 11px;
   bottom: -10px;
   left: 0;
 }
-/* line 88, ../sass/_sec-4.scss */
+/* line 86, ../sass/_sec-4.scss */
 .sec-4 .sec-4__left .sec-4_flex__wrapper {
   position: relative;
 }
-/* line 93, ../sass/_sec-4.scss */
+/* line 91, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right {
   padding: 0 15px 20px 38px;
   background-image: url(../img/sec-4__right-bg.png);
@@ -500,13 +500,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 100, ../sass/_sec-4.scss */
+/* line 98, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right h1 {
   display: block;
   font-size: 32px;
   font-weight: bolder;
 }
-/* line 106, ../sass/_sec-4.scss */
+/* line 104, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block {
   margin: 0;
   width: 100%;
@@ -515,41 +515,41 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
 }
-/* line 115, ../sass/_sec-4.scss */
+/* line 113, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_top {
   padding: 50px 20px;
   width: 44%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 121, ../sass/_sec-4.scss */
+/* line 119, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_top span {
   line-height: 1;
 }
-/* line 125, ../sass/_sec-4.scss */
+/* line 123, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_top span:last-child {
   font-weight: normal;
 }
-/* line 131, ../sass/_sec-4.scss */
+/* line 129, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_bottom {
   background-color: #ffffff;
   width: 56%;
 }
-/* line 135, ../sass/_sec-4.scss */
+/* line 133, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_bottom .year_date {
   font-size: 49px;
   color: #eeeeee;
 }
-/* line 140, ../sass/_sec-4.scss */
+/* line 138, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_bottom .month_date {
   font-size: 13px;
   color: #212225;
 }
-/* line 145, ../sass/_sec-4.scss */
+/* line 143, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_bottom a {
   font-size: 13px;
 }
-/* line 152, ../sass/_sec-4.scss */
+/* line 150, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .sec-4__right__wrapper {
   display: flex;
   flex-direction: column;
