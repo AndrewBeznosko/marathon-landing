@@ -625,58 +625,71 @@ body {
   margin-right: 250px;
 }
 /* line 84, ../sass/_sec-6.scss */
+.sec-6 .block-flex__wrapper .block__descr {
+  padding: 10px;
+}
+/* line 88, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .sec-6_block__descr1 {
-  background: linear-gradient(240deg, transparent 37%, rgba(255, 255, 255, 0.2) 37%);
+  background-image: -webkit-linear-gradient(150deg, transparent 37%, rgba(255, 255, 255, 0.2) 37%);
+  background-image: -o-linear-gradient(150deg, transparent 37%, rgba(255, 255, 255, 0.2) 37%);
+  background-image: linear-gradient(240deg, transparent 37%, rgba(255, 255, 255, 0.2) 37%), url(../img/sec-6__arrow1.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, 95% 5%;
+  padding-top: 65px;
 }
-/* line 90, ../sass/_sec-6.scss */
+/* line 104, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .sec-6_block__descr2 {
-  background: linear-gradient(120deg, transparent 37%, rgba(255, 255, 255, 0.2) 37%);
+  background: -webkit-linear-gradient(30deg, transparent 37%, rgba(255, 255, 255, 0.2) 37%);
+  background: -o-linear-gradient(30deg, transparent 37%, rgba(255, 255, 255, 0.2) 37%);
+  background: linear-gradient(120deg, transparent 37%, rgba(255, 255, 255, 0.2) 37%), url(../img/sec-6__arrow2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, 5% 5%;
 }
-/* line 96, ../sass/_sec-6.scss */
+/* line 113, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .plahotnik {
   background-image: url(../img/plahotnik.png);
 }
-/* line 100, ../sass/_sec-6.scss */
+/* line 117, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .koval {
   background-image: url(../img/koval.png);
 }
-/* line 104, ../sass/_sec-6.scss */
+/* line 121, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .abramchuk {
   background-image: url(../img/abramchuk.png);
 }
-/* line 108, ../sass/_sec-6.scss */
+/* line 125, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .bigulov {
   background-image: url(../img/bigulov.png);
 }
-/* line 112, ../sass/_sec-6.scss */
+/* line 129, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .nelipa {
   background-image: url(../img/nelipa.png);
 }
-/* line 116, ../sass/_sec-6.scss */
+/* line 133, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .saprikina {
   background-image: url(../img/saprikina.png);
 }
-/* line 120, ../sass/_sec-6.scss */
+/* line 137, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .romanishina {
   background-image: url(../img/romanishina.png);
 }
-/* line 124, ../sass/_sec-6.scss */
+/* line 141, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .nelipa2 {
   background-image: url(../img/nelipa2.png);
 }
-/* line 128, ../sass/_sec-6.scss */
+/* line 145, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .goncharenko {
   background-image: url(../img/goncharenko.png);
 }
-/* line 132, ../sass/_sec-6.scss */
+/* line 149, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .stepanova {
   background-image: url(../img/stepanova.png);
 }
-/* line 136, ../sass/_sec-6.scss */
+/* line 153, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper .filippov {
   background-image: url(../img/filippov.png);
 }
-/* line 141, ../sass/_sec-6.scss */
+/* line 158, ../sass/_sec-6.scss */
 .sec-6 .block-flex__wrapper div {
   width: 125px;
   height: 125px;

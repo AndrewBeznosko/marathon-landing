@@ -27,7 +27,7 @@
     }
 
     .bg_text {
-       // display: none;
+        // display: none;
         position: absolute;
         left: -25px;
         top: 0;
@@ -81,62 +81,79 @@
 
     .block-flex__wrapper {
 
+        .block__descr {
+            padding: 10px;
+        }
+
         .sec-6_block__descr1 {
-            //background-image: url(../img/sec-6_block__img1.png);
-            //opacity: .1;
-            background: linear-gradient(240deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
+            background-image: -webkit-linear-gradient(150deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
+            background-image: -o-linear-gradient(150deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
+            background-image: linear-gradient(240deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%),
+            url(../img/sec-6__arrow1.png);
+            background-repeat: no-repeat,
+            no-repeat;
+            background-position: center center, 95% 5%;
+            padding-top: 65px;
+            
+            span {
+               // position: absolute;
+                //bottom:40px;
+            }
         }
 
         .sec-6_block__descr2 {
-            //background-image: url(../img/sec-6_block__img2.png);
-            //opacity: .1;
-            background: linear-gradient(120deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
+            background: -webkit-linear-gradient(30deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
+            background: -o-linear-gradient(30deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
+            background: linear-gradient(120deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%),
+            url(../img/sec-6__arrow2.png);
+            background-repeat: no-repeat, no-repeat;
+            background-position: center center, 5% 5%;
         }
-        
+
         .plahotnik {
             background-image: url(../img/plahotnik.png);
         }
-        
+
         .koval {
             background-image: url(../img/koval.png);
         }
-        
+
         .abramchuk {
             background-image: url(../img/abramchuk.png);
         }
-        
+
         .bigulov {
             background-image: url(../img/bigulov.png);
         }
-        
+
         .nelipa {
             background-image: url(../img/nelipa.png);
         }
-        
+
         .saprikina {
             background-image: url(../img/saprikina.png);
         }
-        
+
         .romanishina {
             background-image: url(../img/romanishina.png);
         }
-        
+
         .nelipa2 {
             background-image: url(../img/nelipa2.png);
         }
-        
+
         .goncharenko {
             background-image: url(../img/goncharenko.png);
         }
-        
+
         .stepanova {
             background-image: url(../img/stepanova.png);
         }
-        
+
         .filippov {
             background-image: url(../img/filippov.png);
         }
-        
+
 
         div {
             width: 125px;
