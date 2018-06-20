@@ -4,9 +4,6 @@
         display: flex;
     }
 
-    
-
-
     .container {
         overflow: hidden;
         position: relative;
@@ -30,14 +27,18 @@
     }
 
     .bg_text {
-        display: none;
+       // display: none;
         position: absolute;
         left: -25px;
+        top: 0;
         font-size: 337px;
         font-weight: 800;
+        line-height: 1;
         color: #cccccc;
+        z-index: 0;
+        opacity: .2;
     }
-    
+
     .sec-6__block1,
     .sec-6__block2,
     .sec-6__block3,
@@ -48,43 +49,98 @@
         display: flex;
         justify-content: flex-start;
     }
-    
+
     .sec-6__block1 {
-        
-        &>div {
+
+        & > div {
             margin-left: 125px;
         }
     }
-    
+
     .sec-6__block2 {
-        
+
         .block-flex__wrapper21 {
             margin-right: 125px;
         }
     }
-    
+
     .sec-6__block3 {
-        
-        .block-flex__wrapper31, .block-flex__wrapper33 {
+
+        .block-flex__wrapper31,
+        .block-flex__wrapper33 {
             margin-left: 125px;
         }
     }
-    
+
     .sec-6__block4 {
-        
+
         .block-flex__wrapper41 {
             margin-right: 250px;
         }
     }
 
     .block-flex__wrapper {
+
+        .sec-6_block__descr1 {
+            //background-image: url(../img/sec-6_block__img1.png);
+            //opacity: .1;
+            background: linear-gradient(240deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
+        }
+
+        .sec-6_block__descr2 {
+            //background-image: url(../img/sec-6_block__img2.png);
+            //opacity: .1;
+            background: linear-gradient(120deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
+        }
+        
+        .plahotnik {
+            background-image: url(../img/plahotnik.png);
+        }
+        
+        .koval {
+            background-image: url(../img/koval.png);
+        }
+        
+        .abramchuk {
+            background-image: url(../img/abramchuk.png);
+        }
+        
+        .bigulov {
+            background-image: url(../img/bigulov.png);
+        }
+        
+        .nelipa {
+            background-image: url(../img/nelipa.png);
+        }
+        
+        .saprikina {
+            background-image: url(../img/saprikina.png);
+        }
+        
+        .romanishina {
+            background-image: url(../img/romanishina.png);
+        }
+        
+        .nelipa2 {
+            background-image: url(../img/nelipa2.png);
+        }
+        
+        .goncharenko {
+            background-image: url(../img/goncharenko.png);
+        }
+        
+        .stepanova {
+            background-image: url(../img/stepanova.png);
+        }
+        
+        .filippov {
+            background-image: url(../img/filippov.png);
+        }
         
 
         div {
             width: 125px;
             height: 125px;
-            border: 1px solid red;
-
         }
     }
 }
