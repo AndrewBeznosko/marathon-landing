@@ -710,23 +710,29 @@ body {
 |                                    sec-7                                     |
 ================================================================================
 */
-/* line 3, ../sass/_sec-7.scss */
+/* line 1, ../sass/_sec-7.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 7, ../sass/_sec-7.scss */
 .sec-7 .container {
   overflow: hidden;
 }
-/* line 7, ../sass/_sec-7.scss */
+/* line 11, ../sass/_sec-7.scss */
 .sec-7 .sec_title {
   padding: 50px 0 40px 0;
 }
-/* line 11, ../sass/_sec-7.scss */
+/* line 15, ../sass/_sec-7.scss */
 .sec-7 .sec-7_img {
   position: relative;
 }
-/* line 14, ../sass/_sec-7.scss */
+/* line 18, ../sass/_sec-7.scss */
 .sec-7 .sec-7_img:hover .hidden_info {
   opacity: 1;
+  background-color: rgba(241, 241, 241, 0.95);
 }
-/* line 21, ../sass/_sec-7.scss */
+/* line 27, ../sass/_sec-7.scss */
 .sec-7 .sec-7_img1 {
   background-image: url(../img/sec-7_logo1.png), url(../img/sec-7__img1.png);
   background-position: center center, center center;
@@ -735,7 +741,7 @@ body {
   height: 190px;
   margin-bottom: 30px;
 }
-/* line 30, ../sass/_sec-7.scss */
+/* line 36, ../sass/_sec-7.scss */
 .sec-7 .sec-7_img2 {
   background-image: url(../img/sec-7_logo2.png), url(../img/sec-7__img2.png);
   background-position: center center, center center;
@@ -744,7 +750,7 @@ body {
   height: 190px;
   margin-bottom: 30px;
 }
-/* line 39, ../sass/_sec-7.scss */
+/* line 45, ../sass/_sec-7.scss */
 .sec-7 .sec-7_img3 {
   background-image: url(../img/sec-7_logo3.png), url(../img/sec-7__img3.png);
   background-position: center center, center center;
@@ -753,7 +759,7 @@ body {
   height: 190px;
   margin-bottom: 30px;
 }
-/* line 48, ../sass/_sec-7.scss */
+/* line 54, ../sass/_sec-7.scss */
 .sec-7 .sec-7_img4 {
   background-image: url(../img/sec-7_logo4.png), url(../img/sec-7__img1.png);
   background-position: center center, center center;
@@ -761,7 +767,7 @@ body {
   background-repeat: no-repeat;
   height: 190px;
 }
-/* line 56, ../sass/_sec-7.scss */
+/* line 62, ../sass/_sec-7.scss */
 .sec-7 .sec-7_img5 {
   background-image: url(../img/sec-7_logo5.png), url(../img/sec-7__img2.png);
   background-position: center center, center center;
@@ -769,7 +775,7 @@ body {
   background-repeat: no-repeat;
   height: 190px;
 }
-/* line 64, ../sass/_sec-7.scss */
+/* line 70, ../sass/_sec-7.scss */
 .sec-7 .sec-7_img6 {
   background-image: url(../img/sec-7_logo6.png), url(../img/sec-7__img3.png);
   background-position: center center, center center;
@@ -777,7 +783,7 @@ body {
   background-repeat: no-repeat;
   height: 190px;
 }
-/* line 72, ../sass/_sec-7.scss */
+/* line 78, ../sass/_sec-7.scss */
 .sec-7 .hidden_info {
   opacity: 0;
   width: 100%;
@@ -791,7 +797,7 @@ body {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 87, ../sass/_sec-7.scss */
+/* line 93, ../sass/_sec-7.scss */
 .sec-7 .hidden_info .sec-7_hidden__button {
   margin: 40px auto;
   display: block;
@@ -801,9 +807,107 @@ body {
   color: #ffffff;
   background-image: linear-gradient(to right, #5a75eb, #8c61ee);
 }
-/* line 96, ../sass/_sec-7.scss */
-.sec-7 .hidden_info .sec-7_hidden__button:hover {
-  text-decoration: none;
+
+/*
+================================================================================
+|                                    sec-8                                     |
+================================================================================
+*/
+/* line 3, ../sass/_sec-8.scss */
+.sec-8 .container {
+  overflow: hidden;
+}
+/* line 7, ../sass/_sec-8.scss */
+.sec-8 .nopadding {
+  padding-left: 0;
+}
+/* line 11, ../sass/_sec-8.scss */
+.sec-8 .sec-8_container {
+  padding: 0;
+  height: 500px;
+}
+/* line 15, ../sass/_sec-8.scss */
+.sec-8 .sec-8_left {
+  padding-left: 60px;
+}
+/* line 19, ../sass/_sec-8.scss */
+.sec-8 .sec-8_center {
+  padding: 0 100px;
+}
+/* line 22, ../sass/_sec-8.scss */
+.sec-8 .sec-8_center b {
+  position: absolute;
+  left: 55px;
+}
+/* line 28, ../sass/_sec-8.scss */
+.sec-8 .sec-8_right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+/* line 33, ../sass/_sec-8.scss */
+.sec-8 .sec-8_right .form-wrapper {
+  width: 100%;
+  background-color: #ccc;
+  padding-top: 6px;
+  border-radius: 10px;
+}
+/* line 39, ../sass/_sec-8.scss */
+.sec-8 .sec-8_right .form-wrapper form {
+  background: #fff;
+  border-radius: inherit;
+  padding: 29px 35px;
+}
+/* line 44, ../sass/_sec-8.scss */
+.sec-8 .sec-8_right .form-wrapper form h5 {
+  font-weight: 800;
+  margin: 0px;
+  display: inline-block;
+}
+/* line 51, ../sass/_sec-8.scss */
+.sec-8 .sec-8_right .form-wrapper .form-row {
+  margin-top: 5px;
+}
+/* line 55, ../sass/_sec-8.scss */
+.sec-8 .sec-8_right .form-wrapper .form-control {
+  border-radius: 0;
+  border: none;
+  border-bottom: solid 1px #ced4da;
+  padding: 4px 15px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+/* line 63, ../sass/_sec-8.scss */
+.sec-8 .sec-8_right .form-wrapper .form-control input {
+  font-size: 18px;
+}
+/* line 68, ../sass/_sec-8.scss */
+.sec-8 .sec-8_right .form-wrapper button {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 15px 26px;
+  margin: 0;
+  margin-top: 32px;
+}
+/* line 78, ../sass/_sec-8.scss */
+.sec-8 .sec-8_right .form-wrapper .form-check {
+  margin-top: 30px;
+  line-height: 1.1;
+}
+/* line 82, ../sass/_sec-8.scss */
+.sec-8 .sec-8_right .form-wrapper .form-check span {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  color: #ccc;
+}
+/* line 91, ../sass/_sec-8.scss */
+.sec-8 .sec-8_map {
+  margin-top: 45px;
+  position: relative;
+  z-index: 10;
 }
 
 /*

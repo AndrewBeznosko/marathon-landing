@@ -1,0 +1,96 @@
+.sec-8 {
+    
+    .container {
+        overflow: hidden;
+    }
+    
+    .nopadding {
+        padding-left: 0;
+    }
+    
+    .sec-8_container  {
+        padding: 0;
+        height: 500px;
+    }
+    .sec-8_left {
+        padding-left: 60px;
+    }
+    
+    .sec-8_center {
+        padding: 0 100px;
+        
+        b {
+            position: absolute;
+            left: 55px;
+        }
+    }
+    
+    .sec-8_right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        .form-wrapper {
+        width: 100%;
+        background-color: #ccc;
+        padding-top: 6px;
+        border-radius: 10px;
+        
+        form {
+            background: #fff;
+            border-radius: inherit;
+            padding: 29px 35px;
+            
+            h5 {
+                font-weight: 800;   
+                margin: 0px;
+                display: inline-block;
+            }
+        }
+        
+        .form-row {
+            margin-top: 5px;
+        }
+        
+        .form-control {
+            border-radius: 0;
+            border: none;
+            border-bottom: solid 1px #ced4da; 
+            padding: 4px 15px;
+            font-size: 18px;
+            margin-top: 20px;
+            
+            input {
+                font-size: 18px; 
+            }
+        }
+        
+        button {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 10px;
+            padding: 15px 26px;
+            margin: 0;
+            margin-top: 32px;
+        }
+        
+        .form-check {
+            margin-top: 30px;
+            line-height: 1.1;
+            
+            span {
+                font-size: 12px;
+                letter-spacing: 0.7px;
+                color: #ccc;
+            }
+        }
+    }
+    }
+    
+    .sec-8_map {
+        margin-top: 45px;
+        position: relative;
+        z-index: 10;
+    }
+}

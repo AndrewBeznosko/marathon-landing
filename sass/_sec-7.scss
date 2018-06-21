@@ -1,89 +1,95 @@
+a:hover {
+    text-decoration: none;
+}
+
 .sec-7 {
-    
+
     .container {
         overflow: hidden;
     }
-    
+
     .sec_title {
         padding: 50px 0 40px 0;
     }
-    
-    .sec-7_img{
+
+    .sec-7_img {
         position: relative;
-        
+
         &:hover .hidden_info {
             //display: block;
             opacity: 1;
-          
+            background-color: rgba(241, 241, 241, .95);
+
         }
-        
+
+
     }
     .sec-7_img1 {
-        background-image: url(../img/sec-7_logo1.png),url(../img/sec-7__img1.png) ;
+        background-image: url(../img/sec-7_logo1.png), url(../img/sec-7__img1.png);
         background-position: center center, center center;
         background-size: auto, cover;
         background-repeat: no-repeat;
         height: 190px;
         margin-bottom: 30px;
     }
-    
+
     .sec-7_img2 {
-        background-image: url(../img/sec-7_logo2.png),url(../img/sec-7__img2.png) ;
+        background-image: url(../img/sec-7_logo2.png), url(../img/sec-7__img2.png);
         background-position: center center, center center;
         background-size: auto, cover;
         background-repeat: no-repeat;
         height: 190px;
         margin-bottom: 30px;
     }
-    
+
     .sec-7_img3 {
-        background-image: url(../img/sec-7_logo3.png),url(../img/sec-7__img3.png) ;
+        background-image: url(../img/sec-7_logo3.png), url(../img/sec-7__img3.png);
         background-position: center center, center center;
         background-size: auto, cover;
         background-repeat: no-repeat;
         height: 190px;
         margin-bottom: 30px;
     }
-    
+
     .sec-7_img4 {
-        background-image: url(../img/sec-7_logo4.png),url(../img/sec-7__img1.png) ;
+        background-image: url(../img/sec-7_logo4.png), url(../img/sec-7__img1.png);
         background-position: center center, center center;
         background-size: auto, cover;
         background-repeat: no-repeat;
         height: 190px;
     }
-    
+
     .sec-7_img5 {
-        background-image: url(../img/sec-7_logo5.png),url(../img/sec-7__img2.png) ;
+        background-image: url(../img/sec-7_logo5.png), url(../img/sec-7__img2.png);
         background-position: center center, center center;
         background-size: auto, cover;
         background-repeat: no-repeat;
         height: 190px;
     }
-    
+
     .sec-7_img6 {
-        background-image: url(../img/sec-7_logo6.png),url(../img/sec-7__img3.png) ;
+        background-image: url(../img/sec-7_logo6.png), url(../img/sec-7__img3.png);
         background-position: center center, center center;
         background-size: auto, cover;
         background-repeat: no-repeat;
         height: 190px;
     }
-    
+
     .hidden_info {
         //display: none;
         opacity: 0;
         width: 100%;
         height: 100%;
-        font-size:16px;
+        font-size: 16px;
         position: absolute;
         padding: 15px 67px;
         background-color: #f1f1f1;
-        webkit-transition: all 0.3s ease;;
-  -moz-transition: all 0.5s ease;;
-  -o-transition: all 0.5s ease;;
-  transition: all 0.5s ease;
-    
-        
+        webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+
+
         .sec-7_hidden__button {
             margin: 40px auto;
             display: block;
@@ -92,12 +98,8 @@
             border-radius: 7px;
             color: #ffffff;
             background-image: linear-gradient(to right, #5a75eb, #8c61ee);
-            
-            &:hover {
-                text-decoration: none;
-                  //cursor: pointer;
-            }
+
         }
-        
+
     }
 }
