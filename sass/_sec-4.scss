@@ -112,16 +112,25 @@
 
 
             .marathons_top {
+                height: auto;
                 padding: 50px 20px;
                 width: 44%;
                 background-size: cover;
+                background-position: center -10px;
                 background-repeat: no-repeat;
+                
+                .cover-bg {
+                    padding-top: 50px;
+                }
                 
                 span {
                     line-height: 1;
+                    font-size: 15px;
+                    display: inline-block;
                 }
                 
                 span:last-child {
+                    margin-bottom: 5px;
                     font-weight: normal;
                 }
 

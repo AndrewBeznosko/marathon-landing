@@ -75,8 +75,32 @@
 
 .marathon_wrapper {
     padding: 25px;
-    background-color: #bbd1ec;
+    background-color: #b8cee9;
 }
+
+.actual_marathons_block:hover .cover-bg {
+    display: block;
+}
+
+.actual_marathons_block:hover .marathons_bottom {
+    background-color: #ffffff;
+}
+
+
+
+//.marathon_wrapper1:hover  {
+//    background-color: #bec5d5;
+//}
+//
+//.marathon_wrapper2:hover  {
+//    background-color: #bfd6c6;
+//}
+//
+//.marathon_wrapper3:hover  {
+//    background-color: #d9bfd2;
+//}
+
+
 
 .actual_marathons_block {
     width: 225px;
@@ -86,8 +110,9 @@
     .marathons_top {
         position: relative;
         background-image: url(../img/marathon_bg1.png); 
-        background-size: cover;
-        padding: 100px 30px;
+        background-size:cover;
+        height: 235px;
+        //padding: 100px 30px;
         text-align: center;
     }
     
@@ -98,12 +123,13 @@
         bottom: 0;
         left: 0;
         right: 0;
+        padding: 90px 30px 0 30px;
+        
+        span {
+            display: inline-block;
+        }
        
-  -khtml-opacity: .6;
-	-moz-opacity: .6;
-		 opacity: .6;
-  
-    
+
     }
     
     .marathons_top:hover  .cover-bg {
@@ -126,13 +152,17 @@
             position: absolute;
             top: -5px;
             right: 0;
-            font-size: 58px;
+            font-size: 53px;
             z-index: -2;
             color: white;
             line-height: 1;
+            color: #eeeeee;
+            font-weight: bold;
         }
         
         .month_date{
+            font-size: 15px;
+            font-weight: bold;
             margin-bottom: 50px;
             color: #000000;
             display: block;
@@ -142,7 +172,7 @@
         a {
             display: inline-block;
             padding: 10px 5px;
-            background-color: #294486;
+            //background-color: #294486;
             border-radius: 10px;
             color: #ffffff;
         }
