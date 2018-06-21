@@ -3,16 +3,22 @@
     .block-flex__wrapper {
         display: flex;
     }
+    
+    .row {
+       padding-left: 82px;
+        padding-right: 82px; 
+    }
 
     .container {
         overflow: hidden;
         position: relative;
-        padding-left: 82px;
-        padding-right: 82px;
+//        padding-left: 82px;
+//        padding-right: 82px;
         background-image: url(../img/sec-6__bg.png);
         background-size: cover;
-        background-position: -500px center;
+        background-position: center center;
         background-repeat: repeat-x;
+        padding-bottom: 90px;
     }
 
     .sec_title {
@@ -33,10 +39,10 @@
         top: 0;
         font-size: 337px;
         font-weight: 800;
-        line-height: 1;
+        line-height: 1.2;
         color: #cccccc;
         z-index: 0;
-        opacity: .2;
+        opacity: .1;
     }
 
     .sec-6__block1,
@@ -95,19 +101,24 @@
             background-position: center center, 95% 5%;
             padding-top: 65px;
             
-            span {
-               // position: absolute;
-                //bottom:40px;
-            }
+            
         }
 
         .sec-6_block__descr2 {
+            
             background: -webkit-linear-gradient(30deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
             background: -o-linear-gradient(30deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
             background: linear-gradient(120deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%),
             url(../img/sec-6__arrow2.png);
             background-repeat: no-repeat, no-repeat;
             background-position: center center, 5% 5%;
+             padding-top: 65px;
+            text-align: right;
+            
+            span {
+                 line-height: 1;
+            }
+            
         }
 
         .plahotnik {
