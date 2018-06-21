@@ -2,16 +2,14 @@
     
     .container {
         overflow: hidden;
+        padding-left: 0;
+        padding-right: 0;
     }
     
     .nopadding {
         padding-left: 0;
     }
     
-    .sec-8_container  {
-        padding: 0;
-        height: 500px;
-    }
     .sec-8_left {
         padding-left: 60px;
     }
@@ -27,16 +25,19 @@
     
     .sec-8_right {
         position: absolute;
-        top: 0;
+        top: -30px;
         left: 0;
         z-index: 100;
+        
         .form-wrapper {
-        width: 100%;
+        position: relative;
+        width: 322px;
         background-color: #ccc;
         padding-top: 6px;
         border-radius: 10px;
         
         form {
+            position: relative;
             background: #fff;
             border-radius: inherit;
             padding: 29px 35px;
@@ -73,11 +74,13 @@
             padding: 15px 26px;
             margin: 0;
             margin-top: 32px;
+            background-image: linear-gradient(to right, #577bc7,#9f89d9);
         }
         
         .form-check {
             margin-top: 30px;
             line-height: 1.1;
+            padding: 10px;
             
             span {
                 font-size: 12px;
@@ -88,9 +91,14 @@
     }
     }
     
+    .form-check-label a {
+        color: #cccccc;
+        text-decoration: underline;
+    }
+    
     .sec-8_map {
         margin-top: 45px;
-        position: relative;
+        margin-bottom: 50px;;
         z-index: 10;
     }
 }

@@ -176,11 +176,16 @@ body {
   letter-spacing: 0.7px;
   color: #ccc;
 }
-/* line 71, ../sass/_sec-1.scss */
+/* line 69, ../sass/_sec-1.scss */
+.sec-1 .form-wrapper .form-check-label a {
+  color: #cccccc;
+  text-decoration: underline;
+}
+/* line 75, ../sass/_sec-1.scss */
 .sec-1 .content-row {
   padding-bottom: 80px;
 }
-/* line 78, ../sass/_sec-1.scss */
+/* line 82, ../sass/_sec-1.scss */
 .sec-1 .carusel .item {
   height: 400px;
   background: #ccc;
@@ -191,16 +196,16 @@ body {
 |                                   NAVIGATION                                 |
 ================================================================================
 */
-/* line 92, ../sass/_sec-1.scss */
+/* line 96, ../sass/_sec-1.scss */
 .sec-1 .navbar {
   padding: 20px 0;
 }
-/* line 95, ../sass/_sec-1.scss */
+/* line 99, ../sass/_sec-1.scss */
 .sec-1 .navbar .navbar-brand img {
   width: 225px;
   height: auto;
 }
-/* line 100, ../sass/_sec-1.scss */
+/* line 104, ../sass/_sec-1.scss */
 .sec-1 .navbar .nav-link {
   color: white;
   font-size: 18px;
@@ -816,60 +821,59 @@ a:hover {
 /* line 3, ../sass/_sec-8.scss */
 .sec-8 .container {
   overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
 }
-/* line 7, ../sass/_sec-8.scss */
+/* line 9, ../sass/_sec-8.scss */
 .sec-8 .nopadding {
   padding-left: 0;
 }
-/* line 11, ../sass/_sec-8.scss */
-.sec-8 .sec-8_container {
-  padding: 0;
-  height: 500px;
-}
-/* line 15, ../sass/_sec-8.scss */
+/* line 13, ../sass/_sec-8.scss */
 .sec-8 .sec-8_left {
   padding-left: 60px;
 }
-/* line 19, ../sass/_sec-8.scss */
+/* line 17, ../sass/_sec-8.scss */
 .sec-8 .sec-8_center {
   padding: 0 100px;
 }
-/* line 22, ../sass/_sec-8.scss */
+/* line 20, ../sass/_sec-8.scss */
 .sec-8 .sec-8_center b {
   position: absolute;
   left: 55px;
 }
-/* line 28, ../sass/_sec-8.scss */
+/* line 26, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right {
   position: absolute;
-  top: 0;
+  top: -30px;
   left: 0;
   z-index: 100;
 }
-/* line 33, ../sass/_sec-8.scss */
+/* line 32, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper {
-  width: 100%;
+  position: relative;
+  width: 322px;
   background-color: #ccc;
   padding-top: 6px;
   border-radius: 10px;
 }
 /* line 39, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper form {
+  position: relative;
   background: #fff;
   border-radius: inherit;
   padding: 29px 35px;
 }
-/* line 44, ../sass/_sec-8.scss */
+/* line 45, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper form h5 {
   font-weight: 800;
   margin: 0px;
   display: inline-block;
 }
-/* line 51, ../sass/_sec-8.scss */
+/* line 52, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper .form-row {
   margin-top: 5px;
 }
-/* line 55, ../sass/_sec-8.scss */
+/* line 56, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper .form-control {
   border-radius: 0;
   border: none;
@@ -878,11 +882,11 @@ a:hover {
   font-size: 18px;
   margin-top: 20px;
 }
-/* line 63, ../sass/_sec-8.scss */
+/* line 64, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper .form-control input {
   font-size: 18px;
 }
-/* line 68, ../sass/_sec-8.scss */
+/* line 69, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper button {
   text-transform: uppercase;
   font-weight: bold;
@@ -891,22 +895,29 @@ a:hover {
   padding: 15px 26px;
   margin: 0;
   margin-top: 32px;
+  background-image: linear-gradient(to right, #577bc7, #9f89d9);
 }
-/* line 78, ../sass/_sec-8.scss */
+/* line 80, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper .form-check {
   margin-top: 30px;
   line-height: 1.1;
+  padding: 10px;
 }
-/* line 82, ../sass/_sec-8.scss */
+/* line 85, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper .form-check span {
   font-size: 12px;
   letter-spacing: 0.7px;
   color: #ccc;
 }
-/* line 91, ../sass/_sec-8.scss */
+/* line 94, ../sass/_sec-8.scss */
+.sec-8 .form-check-label a {
+  color: #cccccc;
+  text-decoration: underline;
+}
+/* line 99, ../sass/_sec-8.scss */
 .sec-8 .sec-8_map {
   margin-top: 45px;
-  position: relative;
+  margin-bottom: 50px;
   z-index: 10;
 }
 
@@ -915,4 +926,99 @@ a:hover {
 |                                     FOOTER                                   |
 ================================================================================
 */
+/* line 1, ../sass/_footer.scss */
+footer {
+  color: #ffffff;
+}
+/* line 4, ../sass/_footer.scss */
+footer .container_footer {
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url(../img/footer_bg.png);
+  background-size: cover;
+  background-position: center;
+}
+/* line 15, ../sass/_footer.scss */
+footer .footer_left {
+  height: 100%;
+  padding-left: 67px;
+  padding-right: 87px;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+/* line 22, ../sass/_footer.scss */
+footer .footer_left span {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 27, ../sass/_footer.scss */
+footer .footer_left .social {
+  margin-top: 23px;
+}
+/* line 30, ../sass/_footer.scss */
+footer .footer_left .social > a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+/* line 36, ../sass/_footer.scss */
+footer .footer_left .social > a:hover {
+  cursor: pointer;
+}
+/* line 41, ../sass/_footer.scss */
+footer .footer_left .social .facebook {
+  background-image: url(../img/footer_sprite.png);
+  background-size: auto;
+  background-position: 2px 0;
+}
+/* line 48, ../sass/_footer.scss */
+footer .footer_left .social .vk {
+  background-image: url(../img/footer_sprite.png);
+  background-size: auto;
+  background-position: -57px 0;
+}
+/* line 54, ../sass/_footer.scss */
+footer .footer_left .social .instagram {
+  background-image: url(../img/footer_sprite.png);
+  background-size: auto;
+  background-position: -116px 0;
+}
+/* line 60, ../sass/_footer.scss */
+footer .footer_left .social .youtube {
+  background-image: url(../img/footer_sprite.png);
+  background-size: auto;
+  background-position: -175px 0;
+}
+/* line 69, ../sass/_footer.scss */
+footer .footer_right {
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+/* line 70, ../sass/_footer.scss */
+footer .footer_right span {
+  display: block;
+}
+/* line 74, ../sass/_footer.scss */
+footer .footer_right a {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #ffffff;
+}
+/* line 80, ../sass/_footer.scss */
+footer .footer_right .meetp {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 800;
+}
+/* line 86, ../sass/_footer.scss */
+footer .footer_right .allright {
+  font-size: 14px;
+}
+/* line 90, ../sass/_footer.scss */
+footer .footer_right .requisites {
+  margin-top: 17px;
+  font-size: 12px;
+}
+
 /*=== responsive FOOTER ===*/
