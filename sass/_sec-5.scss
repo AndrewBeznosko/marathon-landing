@@ -86,8 +86,6 @@
     }
     
     .sec-5_block.slick-current + .sec-5_block > .sec-5_block__bottom {
-       //visibility: visible;
-       //transition: 2s;
             opacity: 1;
             transform: translateY(0);
             transition: 1s;

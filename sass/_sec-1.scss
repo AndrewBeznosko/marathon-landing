@@ -1,51 +1,49 @@
 .sec-1 {
-    
+
     .container {
         background-image: url(../img/sec-1__bg.png);
         background-size: cover;
         padding-left: 90px;
         padding-right: 90px;
     }
-    
-    .title {
-        
-    }
-    
+
+    .title {}
+
     .form-wrapper {
         width: 100%;
         background-color: #ccc;
         padding-top: 6px;
         border-radius: 10px;
-        
+
         form {
             background: #fff;
             border-radius: inherit;
             padding: 29px 35px;
-            
+
             h5 {
-                font-weight: 800;   
+                font-weight: 800;
                 margin: 0px;
                 display: inline-block;
             }
         }
-        
+
         .form-row {
             margin-top: 5px;
         }
-        
+
         .form-control {
             border-radius: 0;
             border: none;
-            border-bottom: solid 1px #ced4da; 
+            border-bottom: solid 1px #ced4da;
             padding: 4px 15px;
             font-size: 18px;
             margin-top: 20px;
-            
+
             input {
-                font-size: 18px; 
+                font-size: 18px;
             }
         }
-        
+
         button {
             text-transform: uppercase;
             font-weight: bold;
@@ -55,11 +53,11 @@
             margin: 0;
             margin-top: 32px;
         }
-        
+
         .form-check {
             margin-top: 30px;
             line-height: 1.1;
-            
+
             span {
                 font-size: 12px;
                 letter-spacing: 0.7px;
@@ -67,41 +65,42 @@
             }
         }
         .form-check-label a {
-        color: #cccccc;
-        text-decoration: underline;
+            color: #cccccc;
+            text-decoration: underline;
+        }
     }
-    }
-    
+
     .content-row {
         padding-bottom: 80px;
+        padding-top: 80px;
     }
-    
-     
-    
+
+
+
     .carusel {
-       
+
         .item {
             height: auto;
             color: #fff;
             text-align: right;
-            
+
             h1 {
                 font-size: 48px;
                 font-weight: 800;
                 margin-bottom: 25px;
             }
-            
-           
+
+
             .clear {
                 clear: both;
             }
-            
+
             h2 {
                 font-size: 24px;
                 font-weight: bold;
                 margin-bottom: 25px;
             }
-            
+
             .sec-1_video__wrapper {
                 width: 290px;
                 height: 155px;
@@ -111,14 +110,71 @@
                 background-size: auto, cover;
                 background-repeat: no-repeat;
                 float: right;
-                
+
             }
-            
+
             span b {
                 font-size: 18px;
             }
         }
     }
+
+    .slick-prev {
+        position: absolute;
+        top: -30px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        left: initial;
+        right: 45px;
+        background-image: url(../img/slider_arrow__left.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center center;
+
+
+        &::before {
+
+            content: "";
+            font-family: sans-serif;
+        }
+    }
+
+    .slick-next {
+        position: absolute;
+        top: -30px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        right: 0;
+        background-image: url(../img/slider_arrow__right.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center center;
+
+        &::before {
+            content: "";
+            font-family: sans-serif;
+        }
+
+    }
+    
+    .slick-dots {
+        width: auto;
+        top: -46px;
+        right: 100px;
+        display: inline-block;
+        
+        li button:before {
+            content: "";
+            background-image: url(../img/sec-1_dot.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            
+        }
+}
+    
+     
 }
 
 
@@ -130,14 +186,14 @@
 
 .sec-1 .navbar {
     padding: 20px 0;
-    
+
     .navbar-brand img {
-        width: 225px; 
+        width: 225px;
         height: auto;
     }
-    
+
     .nav-link {
-        color: rgba(255,255,255,1);
+        color: rgba(255, 255, 255, 1);
         font-size: 18px;
         padding-right: 0;
         padding-left: 34px;
