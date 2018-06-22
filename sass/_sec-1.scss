@@ -76,12 +76,47 @@
         padding-bottom: 80px;
     }
     
-    
+     
     
     .carusel {
+       
         .item {
-            height: 400px;
-            background: #ccc;
+            height: auto;
+            color: #fff;
+            text-align: right;
+            
+            h1 {
+                font-size: 48px;
+                font-weight: 800;
+                margin-bottom: 25px;
+            }
+            
+           
+            .clear {
+                clear: both;
+            }
+            
+            h2 {
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 25px;
+            }
+            
+            .sec-1_video__wrapper {
+                width: 290px;
+                height: 155px;
+                background-color: green;
+                background-image: url(../img/sec-1_play__button.png), url(../img/sec-1_video.png);
+                background-position: center center, center center;
+                background-size: auto, cover;
+                background-repeat: no-repeat;
+                float: right;
+                
+            }
+            
+            span b {
+                font-size: 18px;
+            }
         }
     }
 }

@@ -26,6 +26,23 @@
             background-image: url(../img/sec-5_bg.png);
             background-size: cover;
             background-position: center center;
+            background-repeat: no-repeat;
+            
+            &::after {
+                opacity: 0;
+                position: absolute;
+                left: 50%;
+                top: 20%;
+                transform: translateX(-50%);
+                width: 100px;
+                height: 100px;
+                content: "";
+                background-image: url(../img/sec-5_play__button.png);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                transition: 1s;
+            }
         }
         
         .sec-5_block__bottom {
@@ -75,6 +92,10 @@
             transform: translateY(0);
             transition: 1s;
 
+    }
+    
+    .sec-5_block.slick-current + .sec-5_block > .sec-5_block__top::after {
+            opacity: 1;       
     }
     
     .slick-prev {   
