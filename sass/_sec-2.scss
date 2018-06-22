@@ -38,9 +38,15 @@
          border-radius: 50%;
          left: initial;
          right: 75px;
+          background: #cccccc;
+         background-image: url(../img/slider_arrow__left.png);
+         background-size: 55%;
+         background-repeat: no-repeat;
+         background-position: center center;
 
 
          &::before {
+             content: "";
              font-family: sans-serif;
          }
 
@@ -56,8 +62,14 @@
          height: 40px;
          border-radius: 50%;
          right: 20px;
+         background: #cccccc;
+         background-image: url(../img/slider_arrow__right.png);
+         background-size: 55%;
+         background-repeat: no-repeat;
+         background-position: center center;
 
          &::before {
+             content: "";
              font-family: sans-serif;
          }
          &:hover {
@@ -70,7 +82,7 @@
      .slick-prev,
      .slick-next {
          top: -18%;
-         background: #cccccc;
+         //background: #cccccc;
      }
 
 
@@ -174,7 +186,7 @@
  @media screen and (max-width: 400px) {
 
      .sec-2 {
-         
+
          .marathon_wrapper {
              padding: 0;
          }

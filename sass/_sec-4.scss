@@ -3,7 +3,7 @@
     .col-4 {
         padding: 0;
     }
-    
+
     .sec-4__left {
         padding-top: 35px;
         padding-left: 125px;
@@ -32,26 +32,24 @@
             width: 195px;
             height: 105px;
             background-image: url(../img/sec-4_video-bg.png);
-            background-size: cover;
-            //z-index: 5;
-            
+            background-size: cover; //z-index: 5;
             .play_button {
                 width: 45px;
                 height: 45px;
                 border-radius: 45px;
-                background-color: rgba(255,255,255,0.8);
+                background-color: rgba(255, 255, 255, 0.8);
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
                 z-index: 50;
                 border: 5px solid #96919a;
-                
+
                 &:hover {
                     cursor: pointer;
                 }
-                
-                
+
+
                 &::before {
                     content: "";
                     display: block;
@@ -60,7 +58,7 @@
                     position: absolute;
                     top: 50%;
                     left: calc(50% + 4px);
-                    transform: translate(-50%,-50%);
+                    transform: translate(-50%, -50%);
                 }
             }
         }
@@ -83,7 +81,7 @@
             bottom: -10px;
             left: 0;
         }
-        
+
         .sec-4_flex__wrapper {
             position: relative;
         }
@@ -116,19 +114,19 @@
                 padding: 50px 20px;
                 width: 44%;
                 background-size: cover;
-                background-position: center -10px;
+                background-position: center center;
                 background-repeat: no-repeat;
-                
+
                 .cover-bg {
                     padding-top: 50px;
                 }
-                
+
                 span {
                     line-height: 1;
                     font-size: 15px;
                     display: inline-block;
                 }
-                
+
                 span:last-child {
                     margin-bottom: 5px;
                     font-weight: normal;
@@ -139,21 +137,21 @@
             .marathons_bottom {
                 background-color: #ffffff;
                 width: 56%;
-                
+
                 .year_date {
                     font-size: 49px;
                     color: #eeeeee;
                 }
-                
+
                 .month_date {
                     font-size: 13px;
                     color: #212225;
                 }
-                
+
                 a {
                     font-size: 13px;
                 }
-                
+
             }
         }
 
@@ -163,4 +161,124 @@
             justify-content: flex-end;
         }
     }
+}
+
+/*
+===============================
+|        Responsive           |
+===============================
+*/
+
+@media screen and (max-width: 1270px) {
+    .sec-4 {
+
+        .marathons_bottom a {
+            font-size: 12px !important;
+        }
+        .hidden_info {
+            padding: 10px 30px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 1270px) and (min-width: 990px) {
+    .sec-4 {
+
+        .sec-4__left {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .sec-4 {
+
+        .sec-4__left {
+            text-align: center;
+            padding: 50px 30px;
+            h2 {
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+
+            .sec-4_flex__wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .video-wrapper {
+                    width: calc(195px*1.5);
+                    height: calc(105px*1.5);
+
+                }
+
+                span {
+                    position: static;
+                    display: inline-block;
+                    margin-bottom: 20px;
+
+                }
+                a {
+                    position: static;
+                    display: inline-block;
+                }
+            }
+
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .sec-4 {
+        .sec-4__left {
+
+            .sec-4_flex__wrapper {
+
+                .video-wrapper {
+                    width: calc(195px*2);
+                    height: calc(105px*2);
+                }
+            }
+        }
+
+        .sec-4__right {
+            background-position: 100% 40px;
+            .sec-4__right__wrapper {
+                margin-top: 60px;
+
+            }
+
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .sec-4 {
+        .sec-4__left {
+
+
+            .sec-4_flex__wrapper {
+
+                .video-wrapper {
+                    width: calc(195px*1.6);
+                    height: calc(105px*1.6);
+
+                }
+            }
+        }
+
+    }
+
 }

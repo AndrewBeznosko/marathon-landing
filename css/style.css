@@ -336,61 +336,72 @@ body {
   border-radius: 50%;
   left: initial;
   right: 75px;
+  background: #cccccc;
+  background-image: url(../img/slider_arrow__left.png);
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-/* line 43, ../sass/_sec-2.scss */
+/* line 48, ../sass/_sec-2.scss */
 .sec-2 .slick-prev::before {
+  content: "";
   font-family: sans-serif;
 }
-/* line 47, ../sass/_sec-2.scss */
+/* line 53, ../sass/_sec-2.scss */
 .sec-2 .slick-prev:hover {
   background-color: #ae8aef !important;
 }
-/* line 53, ../sass/_sec-2.scss */
+/* line 59, ../sass/_sec-2.scss */
 .sec-2 .slick-next {
   margin-left: 23px !important;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   right: 20px;
+  background: #cccccc;
+  background-image: url(../img/slider_arrow__right.png);
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-/* line 60, ../sass/_sec-2.scss */
+/* line 71, ../sass/_sec-2.scss */
 .sec-2 .slick-next::before {
+  content: "";
   font-family: sans-serif;
 }
-/* line 63, ../sass/_sec-2.scss */
+/* line 75, ../sass/_sec-2.scss */
 .sec-2 .slick-next:hover {
   background-color: #ae8aef !important;
 }
-/* line 70, ../sass/_sec-2.scss */
+/* line 82, ../sass/_sec-2.scss */
 .sec-2 .slick-prev,
 .sec-2 .slick-next {
   top: -18%;
-  background: #cccccc;
 }
 
-/* line 79, ../sass/_sec-2.scss */
+/* line 91, ../sass/_sec-2.scss */
 .marathon_wrapper {
   padding: 25px;
   background-color: #b8cee9;
 }
 
-/* line 84, ../sass/_sec-2.scss */
+/* line 96, ../sass/_sec-2.scss */
 .actual_marathons_block:hover .cover-bg {
   display: block;
 }
 
-/* line 88, ../sass/_sec-2.scss */
+/* line 100, ../sass/_sec-2.scss */
 .actual_marathons_block:hover .marathons_bottom {
   background-color: #ffffff;
 }
 
-/* line 93, ../sass/_sec-2.scss */
+/* line 105, ../sass/_sec-2.scss */
 .actual_marathons_block {
   width: 225px;
   margin: 0 auto;
   color: #ffffff;
 }
-/* line 98, ../sass/_sec-2.scss */
+/* line 110, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_top {
   position: relative;
   background-image: url(../img/marathon_bg1.png);
@@ -398,7 +409,7 @@ body {
   height: 235px;
   text-align: center;
 }
-/* line 106, ../sass/_sec-2.scss */
+/* line 118, ../sass/_sec-2.scss */
 .actual_marathons_block .cover-bg {
   display: none;
   position: absolute;
@@ -408,19 +419,19 @@ body {
   right: 0;
   padding: 90px 30px 0 30px;
 }
-/* line 115, ../sass/_sec-2.scss */
+/* line 127, ../sass/_sec-2.scss */
 .actual_marathons_block .cover-bg span {
   display: inline-block;
 }
-/* line 122, ../sass/_sec-2.scss */
+/* line 134, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_top:hover .cover-bg {
   display: block;
 }
-/* line 126, ../sass/_sec-2.scss */
+/* line 138, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom:hover ~ .cover-bg {
   display: block;
 }
-/* line 131, ../sass/_sec-2.scss */
+/* line 143, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom {
   z-index: 5;
   position: relative;
@@ -428,7 +439,7 @@ body {
   padding: 10px 0 20px 0;
   background-color: #cccccc;
 }
-/* line 138, ../sass/_sec-2.scss */
+/* line 150, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom .year_date {
   position: absolute;
   top: -5px;
@@ -440,7 +451,7 @@ body {
   color: #eeeeee;
   font-weight: bold;
 }
-/* line 150, ../sass/_sec-2.scss */
+/* line 162, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom .month_date {
   font-size: 15px;
   font-weight: bold;
@@ -449,7 +460,7 @@ body {
   display: block;
   z-index: 150;
 }
-/* line 159, ../sass/_sec-2.scss */
+/* line 171, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom a {
   display: inline-block;
   padding: 10px 5px;
@@ -463,11 +474,11 @@ body {
 ===============================
 */
 @media screen and (max-width: 400px) {
-  /* line 178, ../sass/_sec-2.scss */
+  /* line 190, ../sass/_sec-2.scss */
   .sec-2 .marathon_wrapper {
     padding: 0;
   }
-  /* line 181, ../sass/_sec-2.scss */
+  /* line 193, ../sass/_sec-2.scss */
   .sec-2 .actual_marathons_block {
     width: 100% !important;
   }
@@ -562,7 +573,7 @@ body {
   background-image: url(../img/sec-4_video-bg.png);
   background-size: cover;
 }
-/* line 38, ../sass/_sec-4.scss */
+/* line 36, ../sass/_sec-4.scss */
 .sec-4 .sec-4__left .video-wrapper .play_button {
   width: 45px;
   height: 45px;
@@ -575,11 +586,11 @@ body {
   z-index: 50;
   border: 5px solid #96919a;
 }
-/* line 50, ../sass/_sec-4.scss */
+/* line 48, ../sass/_sec-4.scss */
 .sec-4 .sec-4__left .video-wrapper .play_button:hover {
   cursor: pointer;
 }
-/* line 55, ../sass/_sec-4.scss */
+/* line 53, ../sass/_sec-4.scss */
 .sec-4 .sec-4__left .video-wrapper .play_button::before {
   content: "";
   display: block;
@@ -590,7 +601,7 @@ body {
   left: calc(50% + 4px);
   transform: translate(-50%, -50%);
 }
-/* line 68, ../sass/_sec-4.scss */
+/* line 66, ../sass/_sec-4.scss */
 .sec-4 .sec-4__left .sec-4__left___button {
   position: absolute;
   right: 0;
@@ -601,18 +612,18 @@ body {
   color: #ffffff;
   border-radius: 5px;
 }
-/* line 80, ../sass/_sec-4.scss */
+/* line 78, ../sass/_sec-4.scss */
 .sec-4 .sec-4__left span {
   position: absolute;
   font-size: 11px;
   bottom: -10px;
   left: 0;
 }
-/* line 87, ../sass/_sec-4.scss */
+/* line 85, ../sass/_sec-4.scss */
 .sec-4 .sec-4__left .sec-4_flex__wrapper {
   position: relative;
 }
-/* line 92, ../sass/_sec-4.scss */
+/* line 90, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right {
   padding: 0 15px 20px 38px;
   background-image: url(../img/sec-4__right-bg.png);
@@ -620,13 +631,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 99, ../sass/_sec-4.scss */
+/* line 97, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right h1 {
   display: block;
   font-size: 32px;
   font-weight: bolder;
 }
-/* line 105, ../sass/_sec-4.scss */
+/* line 103, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block {
   margin: 0;
   width: 100%;
@@ -635,56 +646,137 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
 }
-/* line 114, ../sass/_sec-4.scss */
+/* line 112, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_top {
   height: auto;
   padding: 50px 20px;
   width: 44%;
   background-size: cover;
-  background-position: center -10px;
+  background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 122, ../sass/_sec-4.scss */
+/* line 120, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_top .cover-bg {
   padding-top: 50px;
 }
-/* line 126, ../sass/_sec-4.scss */
+/* line 124, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_top span {
   line-height: 1;
   font-size: 15px;
   display: inline-block;
 }
-/* line 132, ../sass/_sec-4.scss */
+/* line 130, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_top span:last-child {
   margin-bottom: 5px;
   font-weight: normal;
 }
-/* line 139, ../sass/_sec-4.scss */
+/* line 137, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_bottom {
   background-color: #ffffff;
   width: 56%;
 }
-/* line 143, ../sass/_sec-4.scss */
+/* line 141, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_bottom .year_date {
   font-size: 49px;
   color: #eeeeee;
 }
-/* line 148, ../sass/_sec-4.scss */
+/* line 146, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_bottom .month_date {
   font-size: 13px;
   color: #212225;
 }
-/* line 153, ../sass/_sec-4.scss */
+/* line 151, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .actual_marathons_block .marathons_bottom a {
   font-size: 13px;
 }
-/* line 160, ../sass/_sec-4.scss */
+/* line 158, ../sass/_sec-4.scss */
 .sec-4 .sec-4__right .sec-4__right__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
+/*
+===============================
+|        Responsive           |
+===============================
+*/
+@media screen and (max-width: 1270px) {
+  /* line 175, ../sass/_sec-4.scss */
+  .sec-4 .marathons_bottom a {
+    font-size: 12px !important;
+  }
+  /* line 178, ../sass/_sec-4.scss */
+  .sec-4 .hidden_info {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 1270px) and (min-width: 990px) {
+  /* line 188, ../sass/_sec-4.scss */
+  .sec-4 .sec-4__left {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 198, ../sass/_sec-4.scss */
+  .sec-4 .sec-4__left {
+    text-align: center;
+    padding: 50px 30px;
+  }
+  /* line 201, ../sass/_sec-4.scss */
+  .sec-4 .sec-4__left h2 {
+    font-size: 20px;
+  }
+  /* line 205, ../sass/_sec-4.scss */
+  .sec-4 .sec-4__left h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  /* line 210, ../sass/_sec-4.scss */
+  .sec-4 .sec-4__left .sec-4_flex__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 215, ../sass/_sec-4.scss */
+  .sec-4 .sec-4__left .sec-4_flex__wrapper .video-wrapper {
+    width: calc(195px*1.5);
+    height: calc(105px*1.5);
+  }
+  /* line 221, ../sass/_sec-4.scss */
+  .sec-4 .sec-4__left .sec-4_flex__wrapper span {
+    position: static;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  /* line 227, ../sass/_sec-4.scss */
+  .sec-4 .sec-4__left .sec-4_flex__wrapper a {
+    position: static;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 246, ../sass/_sec-4.scss */
+  .sec-4 .sec-4__left .sec-4_flex__wrapper .video-wrapper {
+    width: calc(195px*2);
+    height: calc(105px*2);
+  }
+  /* line 253, ../sass/_sec-4.scss */
+  .sec-4 .sec-4__right {
+    background-position: 100% 40px;
+  }
+  /* line 255, ../sass/_sec-4.scss */
+  .sec-4 .sec-4__right .sec-4__right__wrapper {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 274, ../sass/_sec-4.scss */
+  .sec-4 .sec-4__left .sec-4_flex__wrapper .video-wrapper {
+    width: calc(195px*1.6);
+    height: calc(105px*1.6);
+  }
+}
 /*
 ================================================================================
 |                                    sec-5                                     |
