@@ -199,3 +199,51 @@
         padding-left: 34px;
     }
 }
+
+
+/*
+===============================
+|        Responsive           |
+===============================
+*/
+
+@media screen and (max-width: 1270px) {
+    .sec-1 {
+        .container {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    }
+}
+
+@media screen and (max-width: 1270px) and (min-width: 990px) {
+    .sec-1 {
+
+       
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .sec-1 {
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .sec-1 {
+      
+
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .sec-1 {
+     
+    }
+
+}
