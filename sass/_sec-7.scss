@@ -103,3 +103,76 @@ a:hover {
 
     }
 }
+
+ /*
+===============================
+|        Responsive           |
+===============================
+*/
+
+@media screen and (max-width: 1270px) {
+    .sec-7 {
+        .hidden_info {
+            padding: 10px 30px;
+         .sec-7_hidden__button {
+             margin: 20px auto 10px auto;
+         } 
+        }
+    }
+}
+
+ @media screen and (max-width: 992px) {
+
+     .sec-7 {
+         
+         
+         .hidden_info {
+             
+         .sec-7_hidden__button {
+             margin: 20px auto;
+         }
+             
+         }
+
+     }
+ }
+
+
+ @media screen and (max-width: 768px) {
+
+     .sec-7 {
+         
+         .sec-7_img {
+             margin-bottom: 220px !important;
+         }
+         
+         .hidden_info {
+             padding-top: 30px;
+             opacity: 1;
+             position: absolute;
+             top: 100%;
+         }
+         
+         .sec-7_img4, .sec-7_img5, .sec-7_img6 {
+             margin-bottom: 30px;
+         }
+
+     }
+ }
+
+@media screen and (max-width: 400px) {
+
+     .sec-7 {
+         
+        
+         
+         .hidden_info {
+             padding-top: 15px;
+            
+         }
+         
+       
+
+     }
+ }
+

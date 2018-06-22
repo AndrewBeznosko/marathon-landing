@@ -1081,6 +1081,50 @@ a:hover {
   background-image: linear-gradient(to right, #5a75eb, #8c61ee);
 }
 
+ /*
+===============================
+|        Responsive           |
+===============================
+*/
+@media screen and (max-width: 1270px) {
+  /* line 115, ../sass/_sec-7.scss */
+  .sec-7 .hidden_info {
+    padding: 10px 30px;
+  }
+  /* line 117, ../sass/_sec-7.scss */
+  .sec-7 .hidden_info .sec-7_hidden__button {
+    margin: 20px auto 10px auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 131, ../sass/_sec-7.scss */
+  .sec-7 .hidden_info .sec-7_hidden__button {
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 145, ../sass/_sec-7.scss */
+  .sec-7 .sec-7_img {
+    margin-bottom: 220px !important;
+  }
+  /* line 149, ../sass/_sec-7.scss */
+  .sec-7 .hidden_info {
+    padding-top: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+  }
+  /* line 156, ../sass/_sec-7.scss */
+  .sec-7 .sec-7_img4, .sec-7 .sec-7_img5, .sec-7 .sec-7_img6 {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 169, ../sass/_sec-7.scss */
+  .sec-7 .hidden_info {
+    padding-top: 15px;
+  }
+}
 /*
 ================================================================================
 |                                    sec-8                                     |
