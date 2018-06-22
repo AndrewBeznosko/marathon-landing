@@ -1,180 +1,188 @@
  .sec_title {
-        padding: 50px 0;
-        
-        h2 {
-            margin-left: 100px;
-            font-size: 36px;
-            font-weight: bold;
-            
-        }
-        
-        h2::after {
-                display: block;
-                position: relative;
-                left: -520px;
-                content: "";
-                width: 800px;
-                height: 9px;
-                background-color: #1eacc0;
-            }
-       
-        
-        
-    }
+     padding: 50px 0;
 
-.sec-2 {
-   
-    .container {
-        padding-bottom: 50px;
-        overflow-x: hidden;
-        background-color: #f1f1f1;
-    }
-    
+     h2 {
+         margin-left: 100px;
+         font-size: 36px;
+         font-weight: bold;
 
-    
-   .slick-prev {   
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    left: initial;
-                    right: 75px;
+     }
 
-       
-                    &::before {
-                                    font-family: sans-serif;
-                                }
-
-                    &:hover {
-                                    background-color: #ae8aef !important;
-                            }
-       
-                }
-                
-  .slick-next {
-                    margin-left: 23px !important;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    right: 20px;
-                    
-                        &::before {
-                                    font-family: sans-serif;
-                                }
-                        &:hover {
-
-                                    background-color: #ae8aef !important;
-
-                                }
-                }
-                
-                .slick-prev, .slick-next {
-                    top: -18%;
-                    background: #cccccc;
-                } 
-}
-
-.marathon_wrapper {
-    padding: 25px;
-    background-color: #b8cee9;
-}
-
-.actual_marathons_block:hover .cover-bg {
-    display: block;
-}
-
-.actual_marathons_block:hover .marathons_bottom {
-    background-color: #ffffff;
-}
+     h2::after {
+         display: block;
+         position: relative;
+         left: -520px;
+         content: "";
+         width: 800px;
+         height: 9px;
+         background-color: #1eacc0;
+     }
 
 
 
-//.marathon_wrapper1:hover  {
-//    background-color: #bec5d5;
-//}
-//
-//.marathon_wrapper2:hover  {
-//    background-color: #bfd6c6;
-//}
-//
-//.marathon_wrapper3:hover  {
-//    background-color: #d9bfd2;
-//}
+ }
+
+ .sec-2 {
+
+     .container {
+         padding-bottom: 50px;
+         overflow-x: hidden;
+         background-color: #f1f1f1;
+     }
 
 
 
-.actual_marathons_block {
-    width: 225px;
-    margin: 0 auto;
-    color: #ffffff;
-    
-    .marathons_top {
-        position: relative;
-        background-image: url(../img/marathon_bg1.png); 
-        background-size:cover;
-        height: 235px;
-        //padding: 100px 30px;
-        text-align: center;
-    }
-    
-    .cover-bg {
-        display: none;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 90px 30px 0 30px;
-        
-        span {
-            display: inline-block;
-        }
-       
+     .slick-prev {
+         width: 40px;
+         height: 40px;
+         border-radius: 50%;
+         left: initial;
+         right: 75px;
 
-    }
-    
-    .marathons_top:hover  .cover-bg {
-        display: block;
-    }
-    
-    .marathons_bottom:hover ~ .cover-bg {
-        display: block;
-    }
-    
-    
-    .marathons_bottom {
-        z-index: 5;
-        position: relative;
-        text-align: center;
-        padding: 10px 0 20px 0;
-        background-color: #cccccc;
-        
-        .year_date {
-            position: absolute;
-            top: -5px;
-            right: 0;
-            font-size: 53px;
-            z-index: -2;
-            color: white;
-            line-height: 1;
-            color: #eeeeee;
-            font-weight: bold;
-        }
-        
-        .month_date{
-            font-size: 15px;
-            font-weight: bold;
-            margin-bottom: 50px;
-            color: #000000;
-            display: block;
-            z-index: 150;
-        }
-        
-        a {
-            display: inline-block;
-            padding: 10px 5px;
-            //background-color: #294486;
-            border-radius: 10px;
-            color: #ffffff;
-        }
-    }
-}
+
+         &::before {
+             font-family: sans-serif;
+         }
+
+         &:hover {
+             background-color: #ae8aef !important;
+         }
+
+     }
+
+     .slick-next {
+         margin-left: 23px !important;
+         width: 40px;
+         height: 40px;
+         border-radius: 50%;
+         right: 20px;
+
+         &::before {
+             font-family: sans-serif;
+         }
+         &:hover {
+
+             background-color: #ae8aef !important;
+
+         }
+     }
+
+     .slick-prev,
+     .slick-next {
+         top: -18%;
+         background: #cccccc;
+     }
+
+
+ }
+
+ .marathon_wrapper {
+     padding: 25px;
+     background-color: #b8cee9;
+ }
+
+ .actual_marathons_block:hover .cover-bg {
+     display: block;
+ }
+
+ .actual_marathons_block:hover .marathons_bottom {
+     background-color: #ffffff;
+ }
+
+
+ .actual_marathons_block {
+     width: 225px;
+     margin: 0 auto;
+     color: #ffffff;
+
+     .marathons_top {
+         position: relative;
+         background-image: url(../img/marathon_bg1.png);
+         background-size: cover;
+         height: 235px; //padding: 100px 30px;
+         text-align: center;
+     }
+
+     .cover-bg {
+         display: none;
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         padding: 90px 30px 0 30px;
+
+         span {
+             display: inline-block;
+         }
+
+
+     }
+
+     .marathons_top:hover .cover-bg {
+         display: block;
+     }
+
+     .marathons_bottom:hover ~ .cover-bg {
+         display: block;
+     }
+
+
+     .marathons_bottom {
+         z-index: 5;
+         position: relative;
+         text-align: center;
+         padding: 10px 0 20px 0;
+         background-color: #cccccc;
+
+         .year_date {
+             position: absolute;
+             top: -5px;
+             right: 0;
+             font-size: 53px;
+             z-index: -2;
+             color: white;
+             line-height: 1;
+             color: #eeeeee;
+             font-weight: bold;
+         }
+
+         .month_date {
+             font-size: 15px;
+             font-weight: bold;
+             margin-bottom: 50px;
+             color: #000000;
+             display: block;
+             z-index: 150;
+         }
+
+         a {
+             display: inline-block;
+             padding: 10px 5px; //background-color: #294486;
+             border-radius: 10px;
+             color: #ffffff;
+         }
+     }
+ }
+
+ /*
+===============================
+|        Responsive           |
+===============================
+*/
+
+ @media screen and (max-width: 400px) {
+
+     .sec-2 {
+         
+         .marathon_wrapper {
+             padding: 0;
+         }
+         .actual_marathons_block {
+             width: 100% !important;
+
+
+         }
+
+     }
+ }

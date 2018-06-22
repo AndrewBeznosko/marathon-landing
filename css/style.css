@@ -362,34 +362,35 @@ body {
   background-color: #ae8aef !important;
 }
 /* line 70, ../sass/_sec-2.scss */
-.sec-2 .slick-prev, .sec-2 .slick-next {
+.sec-2 .slick-prev,
+.sec-2 .slick-next {
   top: -18%;
   background: #cccccc;
 }
 
-/* line 76, ../sass/_sec-2.scss */
+/* line 79, ../sass/_sec-2.scss */
 .marathon_wrapper {
   padding: 25px;
   background-color: #b8cee9;
 }
 
-/* line 81, ../sass/_sec-2.scss */
+/* line 84, ../sass/_sec-2.scss */
 .actual_marathons_block:hover .cover-bg {
   display: block;
 }
 
-/* line 85, ../sass/_sec-2.scss */
+/* line 88, ../sass/_sec-2.scss */
 .actual_marathons_block:hover .marathons_bottom {
   background-color: #ffffff;
 }
 
-/* line 105, ../sass/_sec-2.scss */
+/* line 93, ../sass/_sec-2.scss */
 .actual_marathons_block {
   width: 225px;
   margin: 0 auto;
   color: #ffffff;
 }
-/* line 110, ../sass/_sec-2.scss */
+/* line 98, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_top {
   position: relative;
   background-image: url(../img/marathon_bg1.png);
@@ -397,7 +398,7 @@ body {
   height: 235px;
   text-align: center;
 }
-/* line 119, ../sass/_sec-2.scss */
+/* line 106, ../sass/_sec-2.scss */
 .actual_marathons_block .cover-bg {
   display: none;
   position: absolute;
@@ -407,19 +408,19 @@ body {
   right: 0;
   padding: 90px 30px 0 30px;
 }
-/* line 128, ../sass/_sec-2.scss */
+/* line 115, ../sass/_sec-2.scss */
 .actual_marathons_block .cover-bg span {
   display: inline-block;
 }
-/* line 135, ../sass/_sec-2.scss */
+/* line 122, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_top:hover .cover-bg {
   display: block;
 }
-/* line 139, ../sass/_sec-2.scss */
+/* line 126, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom:hover ~ .cover-bg {
   display: block;
 }
-/* line 144, ../sass/_sec-2.scss */
+/* line 131, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom {
   z-index: 5;
   position: relative;
@@ -427,7 +428,7 @@ body {
   padding: 10px 0 20px 0;
   background-color: #cccccc;
 }
-/* line 151, ../sass/_sec-2.scss */
+/* line 138, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom .year_date {
   position: absolute;
   top: -5px;
@@ -439,7 +440,7 @@ body {
   color: #eeeeee;
   font-weight: bold;
 }
-/* line 163, ../sass/_sec-2.scss */
+/* line 150, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom .month_date {
   font-size: 15px;
   font-weight: bold;
@@ -448,7 +449,7 @@ body {
   display: block;
   z-index: 150;
 }
-/* line 172, ../sass/_sec-2.scss */
+/* line 159, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom a {
   display: inline-block;
   padding: 10px 5px;
@@ -456,6 +457,21 @@ body {
   color: #ffffff;
 }
 
+ /*
+===============================
+|        Responsive           |
+===============================
+*/
+@media screen and (max-width: 400px) {
+  /* line 178, ../sass/_sec-2.scss */
+  .sec-2 .marathon_wrapper {
+    padding: 0;
+  }
+  /* line 181, ../sass/_sec-2.scss */
+  .sec-2 .actual_marathons_block {
+    width: 100% !important;
+  }
+}
 /*
 ================================================================================
 |                                    sec-3                                     |
