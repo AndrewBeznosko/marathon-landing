@@ -497,19 +497,19 @@
                                 <div class="form-row align-items-center">
                                     <div class="col-12">
                                         <!--                                    <label class="sr-only" for="inlineFormInput">Name</label>-->
-                                        <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Почта">
+                                        <input type="text" class="form-control mb-2" id="inlineFormInput2" placeholder="Почта">
                                     </div>
                                     <div class="col-12">
                                         <!--                                    <label class="sr-only" for="inlineFormInputGroup">Username</label>-->
-                                        <input type="password" class="form-control" id="inlineFormInputGroup" placeholder="Пароль">
+                                        <input type="password" class="form-control" id="inlineFormInputGroup2" placeholder="Пароль">
                                     </div>
                                     <div class="col-12 text-center">
                                         <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-check mb-2" style="width: 100%">
-                                            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                            <span class="form-check-label" for="autoSizingCheck">
+                                            <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                                            <span class="form-check-label" for="autoSizingCheck2">
                                             Подписываясь вы соглашаетесь на обработку <a href="">персональных данных</a> и ринимаете нашу <a href="">политику конфиденциальности</a>
                                         </span>
                                         </div>
@@ -520,7 +520,7 @@
                     </div>
                 </div>
             </div>
-            <iframe class="sec-8_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1123.4918446959603!2d37.650529812056995!3d55.72403562054067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b24370f6aaf%3A0x7617a5511a4c9574!2z0J3QvtCy0L7RgdC_0LDRgdGB0LrQuNC5!5e0!3m2!1sru!2sua!4v1529569682336" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div id="map" class="sec-8_map"></div>
         </div>
 
         <!-- END container -->
@@ -561,6 +561,33 @@
     </footer>
     <!-- END footer -->
 
+    <script>
+        function initMap() {
+            var coordinates = {
+                    lat: 55.7236036,
+                    lng: 37.6509887
+                },
+
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: coordinates,
+                    zoom: 17
+                });
+
+            var icon = {
+                url: "img/mapmarker.png", // url
+                scaledSize: new google.maps.Size(60, 60) // scaled size
+            };
+            // image = 'img/mapmarker.png',
+            var marker = new google.maps.Marker({
+                position: coordinates,
+                map: map,
+                icon: icon,
+                animation: google.maps.Animation.BOUNCE
+            });
+        }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCokruMkleEdVI0maGqxH-Ft83ygQiHzBU&callback=initMap"></script>
 
 
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -578,7 +605,6 @@
     <script src="js/slick/slick.min.js"></script>
 
 
-
     <script>
         $('#sec-1__carusel').slick({
             dots: true,
@@ -594,26 +620,25 @@
             infinite: true,
             speed: 600,
             slidesToShow: 3,
-            responsive: [
+            responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        dots: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                },
                 {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    dots: true,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
+                    breakpoint: 1000,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '200px',
+                        slidesToShow: 1
+                    }
                 }
-            },
-                {
-            breakpoint: 1000,
-                settings: {
-                    arrows: true,
-                    centerMode: true,
-                    centerPadding: '200px',
-                    slidesToShow: 1
-                }
-            }
             ]
 
         });
@@ -630,6 +655,7 @@
         });
 
     </script>
+
 
 </body>
 

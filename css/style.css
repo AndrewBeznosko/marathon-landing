@@ -1092,6 +1092,77 @@ body {
 }
 
 /*
+===============================
+|        Responsive           |
+===============================
+*/
+@media screen and (max-width: 1200px) {
+  /* line 185, ../sass/_sec-6.scss */
+  .sec-6 .bg_text {
+    font-size: 280px;
+  }
+  /* line 188, ../sass/_sec-6.scss */
+  .sec-6 .row {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* line 193, ../sass/_sec-6.scss */
+  .sec-6 .sec-6__block1, .sec-6 .sec-6__block2, .sec-6 .sec-6__block3, .sec-6 .sec-6__block4 {
+    position: static;
+    flex-wrap: wrap;
+  }
+  /* line 197, ../sass/_sec-6.scss */
+  .sec-6 .sec-6__block1 > div, .sec-6 .sec-6__block2 > div, .sec-6 .sec-6__block3 > div, .sec-6 .sec-6__block4 > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  /* line 205, ../sass/_sec-6.scss */
+  .sec-6 .sec-6__block1, .sec-6 .sec-6__block2, .sec-6 .sec-6__block4 {
+    justify-content: space-around;
+  }
+  /* line 210, ../sass/_sec-6.scss */
+  .sec-6 .sec-6__block3 {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 225, ../sass/_sec-6.scss */
+  .sec-6 .container {
+    text-align: center;
+  }
+  /* line 229, ../sass/_sec-6.scss */
+  .sec-6 .bg_text {
+    font-size: 210px;
+    top: 55px;
+  }
+  /* line 233, ../sass/_sec-6.scss */
+  .sec-6 .sec-6__block3 {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 245, ../sass/_sec-6.scss */
+  .sec-6 .bg_text {
+    left: 0;
+    top: 90px;
+    font-size: 150px;
+  }
+  /* line 252, ../sass/_sec-6.scss */
+  .sec-6 .sec-6__block1 > div, .sec-6 .sec-6__block2 > div, .sec-6 .sec-6__block3 > div, .sec-6 .sec-6__block4 > div {
+    margin-bottom: 10px;
+  }
+  /* line 257, ../sass/_sec-6.scss */
+  .sec-6 .sec-6__block4 div:last-of-type {
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 267, ../sass/_sec-6.scss */
+  .sec-6 .bg_text {
+    font-size: 100px;
+  }
+}
+/*
 ================================================================================
 |                                    sec-7                                     |
 ================================================================================
@@ -1341,6 +1412,8 @@ a:hover {
 }
 /* line 99, ../sass/_sec-8.scss */
 .sec-8 .sec-8_map {
+  width: 100%;
+  height: 400px;
   margin-top: 45px;
   margin-bottom: 50px;
   z-index: 10;
