@@ -34,6 +34,10 @@
         color: #ffffff;
     }
     
+    .sec-3_info__wr {
+        margin-left: 100px;
+    }
+    
     img {
         position: relative;
         bottom: 90px;
@@ -66,7 +70,12 @@
 @media screen and (max-width: 992px) {
 
     .sec-3 {
-
+        .sec-3_info__wr {
+        margin-left: 0;
+    }
+        img {
+            position: static;
+        }
     }
 }
 
@@ -74,7 +83,9 @@
 @media screen and (max-width: 768px) {
 
     .sec-3 {
-      
+        .container {
+            padding-bottom: 30px;
+        }
 
 
     }
@@ -83,7 +94,10 @@
 @media screen and (max-width: 400px) {
 
     .sec-3 {
-     
+     img {
+            width: 100%;
+         height: auto;
+        }
     }
 
 }

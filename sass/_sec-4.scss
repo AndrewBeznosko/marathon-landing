@@ -1,5 +1,8 @@
 .sec-4 {
-
+      //background-color: #20a9a3;  
+    background-image: linear-gradient(to right, #20aaa2, #a068d2);
+    background-position: center 160px;
+    background-repeat: no-repeat;
     .col-4 {
         padding: 0;
     }
@@ -33,6 +36,7 @@
             height: 105px;
             background-image: url(../img/sec-4_video-bg.png);
             background-size: cover; //z-index: 5;
+            
             .play_button {
                 width: 45px;
                 height: 45px;
@@ -89,10 +93,10 @@
 
     .sec-4__right {
         padding: 0 15px 20px 38px;
-        background-image: url(../img/sec-4__right-bg.png);
-        background-position: 100% 70px;
-        background-repeat: no-repeat;
-        background-size: cover;
+//        background-image: url(../img/sec-4__right-bg.png);
+//        background-position: 100% 70px;
+//        background-repeat: no-repeat;
+//        background-size: cover;
 
         h1 {
             display: block;

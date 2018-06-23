@@ -1,5 +1,10 @@
 footer {
-    color: #ffffff;
+  
+        background-image: url(../img/footer_bg.png), url(../img/footer_bg3.png);
+        background-size: 100% 90%, 100% 90%;
+        background-position: center bottom, center top;
+        background-repeat: no-repeat;
+        color: #ffffff;
     
     .container_footer {
         padding-left: 0;
@@ -7,9 +12,9 @@ footer {
         //        background-size: cover, 100%;
         //        background-position: center 28px, center -25px;
         //        background-repeat: no-repeat, no-repeat;
-        background-image: url(../img/footer_bg.png);
-        background-size: cover;
-        background-position: center; //height: 210px;
+//        background-image: url(../img/footer_bg.png);
+//        background-size: cover;
+//        background-position: center; //height: 210px;
     }
 
     .footer_left {
@@ -100,6 +105,46 @@ footer {
 
 /*=== responsive FOOTER ===*/
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 992px) {
+    
+    .sec_title .title {
+        font-size: 30px;
+    }
+    
+    footer {
+        .container {
+            width: 90% !important;
+            
+            .footer_left {
+                padding-left: 0;
+            }
+            
+           
+        }
+    }
+}
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    
+     .sec_title .title {
+        font-size: 25px;
+         margin-left: 10px;
+    }
+    
+    footer {
+         background-size: 100% 95%, 100% 95%;
+        
+         .footer_left {
+                padding-left: 0;
+                padding-right: 0;
+                text-align: center;
+             padding-top: 10%;
+            }
+        
+         .footer_right {
+                padding-top: 0;
+                text-align: center;
+             padding-bottom: 10%;
+            }
+    }
+}

@@ -228,24 +228,64 @@
 @media screen and (max-width: 992px) {
 
     .sec-1 {
-
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }
+
 
 
 @media screen and (max-width: 768px) {
 
     .sec-1 {
       
+        .sec-1_flex {
+            flex-direction: column-reverse;
+        }
+        
+        .carusel {
 
+            .item {
+                text-align: center;
+                
+                .sec-1_video__wrapper {
+                    float: none;
+                    margin: 0 auto;
+                }
+            }
+        }
 
     }
+}
+
+@media screen and (max-width: 576px) {
+
+    .sec-1 {
+        .container {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 400px) {
 
     .sec-1 {
-     
+      
+        h1 {
+           font-size: 2em !important;
+        }
+        
+        h2 {
+            font-size: 1.5em !important;
+        }
+        
+        .form-wrapper button {
+        font-size: 15px;
+        }
     }
 
 }

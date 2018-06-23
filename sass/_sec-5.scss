@@ -1,10 +1,9 @@
 .sec-5 {
     
-    .container {
-        background-color: #e9e9e9;
-    }
-    
-    
+background-color: #e9e9e9;
+   
+
+
     .sec-5_slider {
         width: 90%;
         display: flex;
@@ -14,12 +13,12 @@
         }
 
     }
-    
+
     .sec-5_block {
-        margin-right: 10px;  
+        margin-right: 10px;
         color: #9d9898;
         transition: .5s;
-        
+
         .sec-5_block__top {
             width: 100%;
             height: 220px;
@@ -27,7 +26,7 @@
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-            
+
             &::after {
                 opacity: 0;
                 position: absolute;
@@ -44,7 +43,7 @@
                 transition: 1s;
             }
         }
-        
+
         .sec-5_block__bottom {
             background-color: #ffffff;
             position: relative;
@@ -56,8 +55,8 @@
             transform: translateY(-100%);
             z-index: -1;
             transition: .5s;
-            
-            
+
+
             .bottom_left {
                 position: absolute;
                 top: 0;
@@ -72,66 +71,121 @@
                 background-repeat: no-repeat;
             }
         }
-        
-        
+
+
     }
-    
-    
-    .sec-5_block.slick-current + .sec-5_block{
-        @include transform(scale(1.6));  
-        @include transition(.5s); 
+
+
+    .sec-5_block.slick-current + .sec-5_block {
+        @include transform(scale(1.6));
+        @include transition(.5s);
         @include transition-delay(.5s);
-        
-        
+
+
     }
-    
+
     .sec-5_block.slick-current + .sec-5_block > .sec-5_block__bottom {
-            opacity: 1;
-            transform: translateY(0);
-            transition: 1s;
+        opacity: 1;
+        transform: translateY(0);
+        transition: 1s;
 
     }
-    
+
     .sec-5_block.slick-current + .sec-5_block > .sec-5_block__top::after {
-            opacity: 1;       
+        opacity: 1;
     }
-    
-    .slick-prev {   
-                    position: absolute;
-                    top: 40%;
-                    left: 20px;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    background-color: rgba(30,170,193,.9);  
-                    background-image: url(../img/slider_arrow__left.png);
-                    background-size: 55%;
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    z-index: 100;
-                    &::before {
-                                    content: "";
-                                }
 
-                }
-                
-  .slick-next {
-                    position: absolute;
-                    top: 40%;
-                    right: 20px;
-                    background-color: rgba(127,71,237,.9);
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    background-image: url(../img/slider_arrow__right.png);
-                    background-size: 55%;
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    z-index: 100;
-                
-                     &::before {
-                                    content: "";
-                                }
+    .slick-prev {
+        position: absolute;
+        top: 40%;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(30, 170, 193, .9);
+        background-image: url(../img/slider_arrow__left.png);
+        background-size: 55%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 100;
+        &::before {
+            content: "";
+        }
+
+    }
+
+    .slick-next {
+        position: absolute;
+        top: 40%;
+        right: 20px;
+        background-color: rgba(127, 71, 237, .9);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-image: url(../img/slider_arrow__right.png);
+        background-size: 55%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 100;
+
+        &::before {
+            content: "";
+        }
+
+    }
+}
+
+/*
+===============================
+|        Responsive           |
+===============================
+*/
+
+@media screen and (max-width: 1200px) {
+    .sec-6 {}
+}
+
+@media screen and (max-width: 1270px) and (min-width: 990px) {
+    .sec-5 {}
+}
+
+@media screen and (max-width: 992px) {
+
+    .sec-5 {}
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .sec-5 {
         
-                }
+        .sec-5_slider {
+            .slick-track {
+            padding: 0;
+        }
+        }
+
+        .sec-5_block.slick-current + .sec-5_block {
+            @include transform(scale(1));
+            @include transition(.5s);
+            @include transition-delay(.5s);
+
+    }
+        
+        .sec-5_block__bottom {
+              opacity: 1 !important; 
+              transform: translateY(0) !important;
+            }
+        
+        .sec-5_block__top::after {
+            display: none;
+        }
+        }
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    .sec- {}
+
 }

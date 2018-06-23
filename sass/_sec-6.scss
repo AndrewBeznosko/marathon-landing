@@ -1,4 +1,9 @@
 .sec-6 {
+    
+     background-image: url(../img/sec-6__bg.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: repeat-x;
 
     .block-flex__wrapper {
         display: flex;
@@ -14,10 +19,10 @@
         position: relative;
 //        padding-left: 82px;
 //        padding-right: 82px;
-        background-image: url(../img/sec-6__bg.png);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: repeat-x;
+//        background-image: url(../img/sec-6__bg.png);
+//        background-size: cover;
+//        background-position: center center;
+//        background-repeat: repeat-x;
         padding-bottom: 90px;
     }
 
@@ -213,11 +218,6 @@
     }
 }
 
-@media screen and (max-width: 1270px) and (min-width: 990px) {
-    .sec-6 {
-
-    }
-}
 
 @media screen and (max-width: 992px) {
 
