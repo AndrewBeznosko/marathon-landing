@@ -3,13 +3,16 @@
 }
 .sec-3 {
       
-   
+    background-image: url(../img/sec-3__bg.png);
+        background-size: cover;
+        background-position: -390px center;
+        background-repeat: no-repeat;
     .container {
         position: relative;
-         background-image: url(../img/sec-3__bg.png);
-        background-size: cover;
-        background-position: -180px center;
-        background-repeat: no-repeat;
+//         background-image: url(../img/sec-3__bg.png);
+//        background-size: cover;
+//        background-position: -180px center;
+//        background-repeat: no-repeat;
     }
     
     .text_bg {
