@@ -93,10 +93,6 @@
 
     .sec-4__right {
         padding: 0 15px 20px 38px;
-//        background-image: url(../img/sec-4__right-bg.png);
-//        background-position: 100% 70px;
-//        background-repeat: no-repeat;
-//        background-size: cover;
 
         h1 {
             display: block;
@@ -198,6 +194,8 @@
 @media screen and (max-width: 992px) {
 
     .sec-4 {
+        
+            background-position: center 140px;
 
         .sec-4__left {
             text-align: center;
@@ -255,6 +253,10 @@
         }
 
         .sec-4__right {
+            h1 {
+                font-size: 23px;
+                margin-top: 10px;
+            }
             background-position: 100% 40px;
             .sec-4__right__wrapper {
                 margin-top: 60px;
