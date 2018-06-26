@@ -456,13 +456,24 @@ body {
   background-color: #ffffff;
 }
 
-/* line 103, ../sass/_sec-2.scss */
+/* line 102, ../sass/_sec-2.scss */
+.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+/* line 107, ../sass/_sec-2.scss */
+.disabled:hover {
+  pointer-events: none;
+}
+
+/* line 113, ../sass/_sec-2.scss */
 .actual_marathons_block {
   width: 225px;
   margin: 0 auto;
   color: #ffffff;
 }
-/* line 108, ../sass/_sec-2.scss */
+/* line 118, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_top {
   position: relative;
   background-image: url(../img/marathon_bg1.png);
@@ -470,7 +481,7 @@ body {
   height: 235px;
   text-align: center;
 }
-/* line 116, ../sass/_sec-2.scss */
+/* line 126, ../sass/_sec-2.scss */
 .actual_marathons_block .cover-bg {
   display: none;
   position: absolute;
@@ -480,19 +491,19 @@ body {
   right: 0;
   padding: 90px 30px 0 30px;
 }
-/* line 125, ../sass/_sec-2.scss */
+/* line 135, ../sass/_sec-2.scss */
 .actual_marathons_block .cover-bg span {
   display: inline-block;
 }
-/* line 132, ../sass/_sec-2.scss */
+/* line 142, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_top:hover .cover-bg {
   display: block;
 }
-/* line 136, ../sass/_sec-2.scss */
+/* line 146, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom:hover ~ .cover-bg {
   display: block;
 }
-/* line 141, ../sass/_sec-2.scss */
+/* line 151, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom {
   z-index: 5;
   position: relative;
@@ -500,7 +511,7 @@ body {
   padding: 10px 0 20px 0;
   background-color: #cccccc;
 }
-/* line 148, ../sass/_sec-2.scss */
+/* line 158, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom .year_date {
   position: absolute;
   top: -5px;
@@ -512,8 +523,9 @@ body {
   color: #eeeeee;
   font-weight: bold;
 }
-/* line 160, ../sass/_sec-2.scss */
+/* line 170, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom .month_date {
+  position: relative;
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 50px;
@@ -521,12 +533,34 @@ body {
   display: block;
   z-index: 150;
 }
-/* line 169, ../sass/_sec-2.scss */
+/* line 180, ../sass/_sec-2.scss */
 .actual_marathons_block .marathons_bottom a {
   display: inline-block;
   padding: 10px 5px;
   border-radius: 10px;
   color: #ffffff;
+}
+
+/*
+===============================
+|        MODAL                |
+===============================
+*/
+/* line 197, ../sass/_sec-2.scss */
+.modal-content .modalwrapp {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+/* line 207, ../sass/_sec-2.scss */
+.modal-content .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
  /*
@@ -535,11 +569,11 @@ body {
 ===============================
 */
 @media screen and (max-width: 400px) {
-  /* line 188, ../sass/_sec-2.scss */
+  /* line 224, ../sass/_sec-2.scss */
   .sec-2 .marathon_wrapper {
     padding: 0;
   }
-  /* line 191, ../sass/_sec-2.scss */
+  /* line 227, ../sass/_sec-2.scss */
   .sec-2 .actual_marathons_block {
     width: 100% !important;
   }
@@ -1450,23 +1484,33 @@ a:hover {
 .sec-8 .sec-8_left {
   padding-left: 60px;
 }
-/* line 17, ../sass/_sec-8.scss */
+/* line 16, ../sass/_sec-8.scss */
+.sec-8 .sec-8_left .sec-8_phone {
+  position: relative;
+  padding-left: 80px;
+}
+/* line 20, ../sass/_sec-8.scss */
+.sec-8 .sec-8_left .sec-8_phone b {
+  position: absolute;
+  left: 0px;
+}
+/* line 27, ../sass/_sec-8.scss */
 .sec-8 .sec-8_center {
   padding: 0 100px;
 }
-/* line 20, ../sass/_sec-8.scss */
+/* line 30, ../sass/_sec-8.scss */
 .sec-8 .sec-8_center b {
   position: absolute;
   left: 55px;
 }
-/* line 26, ../sass/_sec-8.scss */
+/* line 36, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right {
   position: absolute;
   top: -30px;
   left: 0;
   z-index: 100;
 }
-/* line 32, ../sass/_sec-8.scss */
+/* line 42, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper {
   position: relative;
   width: 322px;
@@ -1474,24 +1518,24 @@ a:hover {
   padding-top: 6px;
   border-radius: 10px;
 }
-/* line 39, ../sass/_sec-8.scss */
+/* line 49, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper form {
   position: relative;
   background: #fff;
   border-radius: inherit;
   padding: 29px 35px;
 }
-/* line 45, ../sass/_sec-8.scss */
+/* line 55, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper form h5 {
   font-weight: 800;
   margin: 0px;
   display: inline-block;
 }
-/* line 52, ../sass/_sec-8.scss */
+/* line 62, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper .form-row {
   margin-top: 5px;
 }
-/* line 56, ../sass/_sec-8.scss */
+/* line 66, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper .form-control {
   border-radius: 0;
   border: none;
@@ -1500,11 +1544,11 @@ a:hover {
   font-size: 18px;
   margin-top: 20px;
 }
-/* line 64, ../sass/_sec-8.scss */
+/* line 74, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper .form-control input {
   font-size: 18px;
 }
-/* line 69, ../sass/_sec-8.scss */
+/* line 79, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper button {
   text-transform: uppercase;
   font-weight: bold;
@@ -1515,24 +1559,24 @@ a:hover {
   margin-top: 32px;
   background-image: linear-gradient(to right, #577bc7, #9f89d9);
 }
-/* line 80, ../sass/_sec-8.scss */
+/* line 90, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper .form-check {
   margin-top: 30px;
   line-height: 1.1;
   padding: 10px;
 }
-/* line 85, ../sass/_sec-8.scss */
+/* line 95, ../sass/_sec-8.scss */
 .sec-8 .sec-8_right .form-wrapper .form-check span {
   font-size: 12px;
   letter-spacing: 0.7px;
   color: #ccc;
 }
-/* line 94, ../sass/_sec-8.scss */
+/* line 104, ../sass/_sec-8.scss */
 .sec-8 .form-check-label a {
   color: #cccccc;
   text-decoration: underline;
 }
-/* line 99, ../sass/_sec-8.scss */
+/* line 109, ../sass/_sec-8.scss */
 .sec-8 .sec-8_map {
   width: 100%;
   height: 400px;
@@ -1547,29 +1591,29 @@ a:hover {
 ===============================
 */
 @media screen and (max-width: 992px) {
-  /* line 123, ../sass/_sec-8.scss */
+  /* line 133, ../sass/_sec-8.scss */
   .sec-8 .sec-8_right {
     left: 3%;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 133, ../sass/_sec-8.scss */
+  /* line 143, ../sass/_sec-8.scss */
   .sec-8 .container {
     padding-bottom: 300px;
   }
-  /* line 137, ../sass/_sec-8.scss */
+  /* line 147, ../sass/_sec-8.scss */
   .sec-8 .sec-8_left {
     padding: 0 10px;
   }
-  /* line 141, ../sass/_sec-8.scss */
+  /* line 151, ../sass/_sec-8.scss */
   .sec-8 .sec-8_center {
     padding: 0 10px;
   }
-  /* line 144, ../sass/_sec-8.scss */
+  /* line 154, ../sass/_sec-8.scss */
   .sec-8 .sec-8_center b {
     position: static;
   }
-  /* line 149, ../sass/_sec-8.scss */
+  /* line 159, ../sass/_sec-8.scss */
   .sec-8 .sec-8_right {
     box-shadow: 0 10px 70px -15px;
     left: 50%;

@@ -22,7 +22,7 @@
 
     <section class="sec sec-1">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark" id="headermenu">
                 <a class="navbar-brand" href="#">
  <img src="img/logo.png" alt="Challengeme">
                 </a>
@@ -32,13 +32,15 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Наши марафоны</a>
+                            <a class="nav-link" href="#sec-2">Наши марафоны</a>
                         </li>
+                        <!--
                         <li class="nav-item">
                             <a class="nav-link" href="#">Отзывы о нас</a>
                         </li>
+                        -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Контакты</a>
+                            <a class="nav-link" href="#sec-8">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +50,7 @@
                 <div class="col-xl-4 col-md-6 col-sm-12">
                     <div class="form-wrapper">
                         <form action="">
-                            <h5>Узнавайте первыми о новых проектах</h5>
+                            <h5>Станьте участником наших программ</h5>
                             <div class="form-row align-items-center">
                                 <div class="col-12">
                                     <label class="sr-only" for="inlineFormInput">Name</label>
@@ -110,9 +112,26 @@
     </section>
     <!-- END banner -->
 
-    <section class="sec sec-2">
+    <section class="sec sec-2" id="sec-2">
         <div class="container">
-
+            
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+     
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modalwrapp">
+            <span class="modal-title" id="exampleModalCenterTitle">Марафон только завершен!</span>
+            <span>Информация ещё в обработке!</span>
+       </div>
+  
+      
+    </div>
+  </div>
+</div>
+            
             <div class="sec_title">
                 <h2 class="title">Актуальные марафоны</h2>
             </div>
@@ -129,10 +148,18 @@
                             <div class="marathons_bottom">
                                 <span class="month_date">30 апреля-13 июня</span>
                                 <span class="year_date">2018</span>
-                                <a href="" style="background-color: #294486;">КАК ВСЕ ПРОШЛО</a>
+
+                                <a href="" class="btn btn-primary" style="background-color: #294486;" data-toggle="modal" data-target="#exampleModalCenter">КАК ВСЕ ПРОШЛО</a>
+                                                                                           
                             </div>
+                            
+
+                       
                         </div>
                     </div>
+
+                    
+
                 </div>
                 <div class="col-4">
                     <div class="marathon_wrapper marathon_wrapper2">
@@ -143,16 +170,16 @@
                                 </div>
                             </div>
                             <div class="marathons_bottom">
-                                <span class="month_date">30 апреля-13 июня</span>
+                                <span class="month_date">2 июля - 16 августа</span>
                                 <span class="year_date">2018</span>
-                                <a href="" style="background-color: #348d4d; padding-left:10px; padding-right:10px;">СТАНЬ УЧАСТНИКОМ</a>
+                                <a href="http://challengeme.network/" target="_blank" style="background-color: #348d4d; padding-left:10px; padding-right:10px;">СТАНЬ УЧАСТНИКОМ</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="marathon_wrapper marathon_wrapper3">
-                        <div class="actual_marathons_block">
+                    <div class="marathon_wrapper marathon_wrapper3 disabled">
+                        <div class="actual_marathons_block ">
                             <div class="marathons_top" style="background-image: url(img/marathon_bg3.png); ">
                                 <div class="cover-bg" style=" background: rgba(170,41,141,0.6);">
                                     <span>Новый код</span> <span><b>нетворкинга</b></span>
@@ -205,7 +232,7 @@
             </div>
             <div class="row justify-content-between">
 
-                <div class="col-lg-5 col-md-6 sec-3_info__wr" >
+                <div class="col-lg-5 col-md-6 sec-3_info__wr">
                     <span class="sec-3__info"> MeetPartners –  это международная группа компаний, включающая шесть образовательных и нетворкинг проектов, которые помогают людям по всему миру расти и развиваться.</span>
                     <span class="sec-3__info">Представляет лидирующих мировых спикеров в России - Тони Роббинс, Роберт Кийосаки, Гил Петерсил, Йохан Эрнст Нильсон и другие.</span>
                     <span class="sec-3__info">ChallengeMe – революционная бизнес-платформа, ставшая частью компании MeetPartners. Основная цель ChallengeMe - создать сообщество единомышленников, которые развиваются сами и готовы помогать двигаться вперед другим.</span>
@@ -221,6 +248,8 @@
     </section>
     <!-- END sec-3 -->
 
+
+    <!--
     <section class="sec sec-4">
         <div class="container">
             <div class="sec_title">
@@ -276,7 +305,7 @@
             </div>
 
         </div>
-        <!-- END container -->
+        
     </section>
     <!-- END sec-4 -->
 
@@ -471,7 +500,7 @@
     </section>
     <!-- END sec-7 -->
 
-    <section class="sec sec-8">
+    <section class="sec sec-8" id="sec-8">
         <div class="container">
             <div class="sec_title">
                 <h2 class="title">Контакты</h2>
@@ -479,8 +508,12 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="sec-8_left">
-                        <span><b>Телефон:</b> +7(499)390 14 07</span><br>
-                        <span><b>E-mail: </b>contact@meetpartners.ru</span>
+                       <div class="sec-8_phone">
+                            <span><b>Телефон:</b> +7 (958) 756 86 51 <br> +38 (044) 334 5368</span><br>
+                        </div>
+                        <div class="sec-8_email">
+                            <span><b>E-mail: </b>support@challengeme.network</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -530,33 +563,33 @@
 
 
     <footer>
-       
-            <div class="container">
 
-                <div class="row">
-                    <div class="col-lg-5 col-md-6">
-                        <div class="footer_left">
-                            <span>Присоединяйтесь к нам в социальных сетях</span>
-                            <div class="social">
-                                <a class="facebook"></a>
-                                <a class="vk"></a>
-                                <a class="instagram"></a>
-                                <a class="youtube"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-6">
-                        <div class="footer_right">
-                            <a href="#">Политика конфенденциальности</a>
-                            <span class="meetp">MeetPartners © 2017</span>
-                            <span class="allright">Все права защищены</span>
-                            <span class="requisites">ООО "МИТПАРТНЕРС", Юридический адрес: 115120, г. Москва, ул. Прямикова, дом 1, ОГРН 5147746450924, 
-ИНН 7709969493, КПП 770901001</span>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-md-6">
+                    <div class="footer_left">
+                        <span>Присоединяйтесь к нам в социальных сетях</span>
+                        <div class="social">
+                            <a class="facebook"></a>
+                            <a class="vk"></a>
+                            <a class="instagram"></a>
+                            <a class="youtube"></a>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="footer_right">
+                        <a href="#">Политика конфенденциальности</a>
+                        <span class="meetp">MeetPartners © 2017</span>
+                        <span class="allright">Все права защищены</span>
+                        <span class="requisites">ООО "МИТПАРТНЕРС", Юридический адрес: 115120, г. Москва, ул. Прямикова, дом 1, ОГРН 5147746450924, 
+ИНН 7709969493, КПП 770901001</span>
+                    </div>
+                </div>
             </div>
-       
+        </div>
+
         <!-- END container -->
     </footer>
     <!-- END footer -->
@@ -585,7 +618,6 @@
                 animation: google.maps.Animation.BOUNCE
             });
         }
-
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCokruMkleEdVI0maGqxH-Ft83ygQiHzBU&callback=initMap"></script>
 
@@ -611,14 +643,15 @@
             infinite: true,
             speed: 300,
             slidesToShow: 1,
-            adaptiveHeight: true, 
-            
+            adaptiveHeight: true,
+
             responsive: [{
-            breakpoint: 768, 
-            settings: {
-            arrows:false
-        
-                                       }}]
+                breakpoint: 768,
+                settings: {
+                    arrows: false
+
+                }
+            }]
         });
 
         $('#sec-2__carusel').slick({
@@ -658,19 +691,18 @@
             infinite: true,
             speed: 600,
             slidesToShow: 3,
-             responsive: [{
-                    breakpoint: 767,
-                    settings: {
-                        arrows: false,
-                        dots: true,
-                        //centerMode: true,
-                        //centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }]
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    //centerMode: true,
+                    //centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }]
 
         });
-
     </script>
 
 

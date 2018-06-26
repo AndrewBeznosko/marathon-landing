@@ -12,6 +12,16 @@
     
     .sec-8_left {
         padding-left: 60px;
+        
+        .sec-8_phone {
+            position: relative;
+            padding-left: 80px;
+            
+            b {
+                position: absolute;
+                left: 0px;
+            }
+        }
     }
     
     .sec-8_center {
