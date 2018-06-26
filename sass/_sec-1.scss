@@ -1,4 +1,18 @@
 .sec-1 {
+    
+    /*
+================================================================================
+|                                   MODAL                                      |
+================================================================================
+*/
+    .sec-1_modal {
+        
+        .modal-dialog {
+       //padding:100px;
+            width: 800px;
+        }
+    }
+    
      background-image: url(../img/sec-1__bg.png);
         background-size: cover;
 
@@ -16,22 +30,22 @@
         background-color: #ccc;
         padding-top: 6px;
         border-radius: 10px;
+        
 
         form {
             background: #fff;
             border-radius: inherit;
-            padding: 29px 35px;
+            padding: 30px;
 
             h5 {
                 font-weight: 800;
                 margin: 0px;
+                margin-bottom: 10px;
                 display: inline-block;
             }
         }
 
-        .form-row {
-            margin-top: 5px;
-        }
+
 
         .form-control {
             border-radius: 0;
@@ -53,7 +67,8 @@
             border-radius: 10px;
             padding: 15px 26px;
             margin: 0;
-            margin-top: 32px;
+            margin-top: 10px;
+            width: 90%;
         }
 
         .form-check {
@@ -104,14 +119,20 @@
             }
 
             .sec-1_video__wrapper {
+                position: relative;
+                z-index: 1000;
                 width: 290px;
                 height: 155px;
                 background-color: green;
                 background-image: url(../img/sec-1_play__button.png), url(../img/sec-1_video.png);
                 background-position: center center, center center;
-                background-size: auto, cover;
+                background-size: auto, cover;  
                 background-repeat: no-repeat;
                 float: right;
+                
+                &:hover {
+                    cursor: pointer;
+                }
 
             }
 
@@ -162,6 +183,7 @@
     }
     
     .slick-dots {
+        height: 30px;
         width: auto;
         top: -46px;
         right: 100px;
@@ -237,7 +259,7 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .sec-1 {
       
@@ -285,6 +307,8 @@
         
         .form-wrapper button {
         font-size: 15px;
+            width: 100%;
+            padding: 15px;
         }
     }
 

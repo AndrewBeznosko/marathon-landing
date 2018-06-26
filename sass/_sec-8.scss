@@ -39,64 +39,71 @@
         left: 0;
         z-index: 100;
         
-        .form-wrapper {
-        position: relative;
-        width: 322px;
+        
+            .form-wrapper {
+        width: 80%;
         background-color: #ccc;
         padding-top: 6px;
         border-radius: 10px;
         
+
         form {
-            position: relative;
             background: #fff;
             border-radius: inherit;
-            padding: 29px 35px;
-            
+            padding: 30px;
+
             h5 {
-                font-weight: 800;   
+                font-weight: 800;
                 margin: 0px;
+                margin-bottom: 10px;
                 display: inline-block;
             }
         }
-        
-        .form-row {
-            margin-top: 5px;
-        }
-        
+
+
+
         .form-control {
             border-radius: 0;
             border: none;
-            border-bottom: solid 1px #ced4da; 
+            border-bottom: solid 1px #ced4da;
             padding: 4px 15px;
             font-size: 18px;
             margin-top: 20px;
-            
+
             input {
-                font-size: 18px; 
+                font-size: 18px;
             }
         }
-        
+
         button {
             text-transform: uppercase;
             font-weight: bold;
             font-size: 18px;
             border-radius: 10px;
-            padding: 15px 26px;
+            padding: 15px;
             margin: 0;
-            margin-top: 32px;
-            background-image: linear-gradient(to right, #577bc7,#9f89d9);
+            margin-top: 10px;
+            width: 90%;
+           
         }
-        
+                
+                .sec-8_form_button2 {
+                     background-image: linear-gradient(to right, #577bc7,#9f89d9);
+                }
+
         .form-check {
             margin-top: 30px;
             line-height: 1.1;
-            padding: 10px;
-            
+
             span {
                 font-size: 12px;
                 letter-spacing: 0.7px;
                 color: #ccc;
             }
+        }
+        .form-check-label a {
+            color: #cccccc;
+            text-decoration: underline;
         }
     }
     }
@@ -121,9 +128,13 @@
 ===============================
 */
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1200px) and(min-width: 992px) {
     .sec-8 {
- 
+        .sec-8_right .form-wrapper button {
+            font-size: 14px;
+            padding: 15px 7px;
+            width: 100%;
+        }
     }
 }
 
@@ -132,6 +143,7 @@
      .sec-8 {
          .sec-8_right {
              left: 3%;
+             
          }
      }
  }
@@ -141,7 +153,7 @@
 
      .sec-8 {
          .container {
-             padding-bottom: 300px;
+             padding-bottom: 180px;
          }
          
          .sec-8_left {
@@ -157,9 +169,17 @@
          }
          
          .sec-8_right {
-             box-shadow: 0 10px 70px -15px;
                  left: 50%;
-                 transform: translate(-50%,85%);
+                 transform: translate(-50%,150%);
+             
+             .form-wrapper {
+                 width: 100%;
+                  box-shadow: 0 10px 70px -15px;
+                 
+                 button {
+                     width: 100%;
+                 }
+             }
          }
 
      }
