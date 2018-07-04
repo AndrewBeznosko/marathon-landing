@@ -1,5 +1,21 @@
 .sec-6 {
     
+    div.descr {
+        position: absolute;
+        bottom: 0;
+        width: 100%!important;
+        min-height: 125px;
+        height: auto!important;
+        padding: 10px;
+        opacity: 0;
+        color:#fff;
+      //  z-index: -100;
+        transition: .3s;
+        background-color:#0193d9;
+        font-size: 14px;
+        pointer-events: none;
+    }
+    
      background-image: url(../img/sec-6__bg.png);
         background-size: cover;
         background-position: center center;
@@ -7,7 +23,15 @@
 
     .block-flex__wrapper {
         display: flex;
+        position: relative;
+        
+        &:hover .descr {
+            pointer-events: inherit;
+            opacity: 1;
+        }
+        
     }
+     
     
     .row {
        padding-left: 82px;
@@ -27,7 +51,6 @@
             &::after {
                 background-color: #ffffff;
             }
-
         }
     }
 
@@ -56,7 +79,7 @@
 
     .sec-6__block1 {
 
-        & > div {
+        & > div:not(:last-child) {
             margin-left: 125px;
         }
     }
@@ -93,7 +116,7 @@
             background-image: -webkit-linear-gradient(150deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
             background-image: -o-linear-gradient(150deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
             background-image: linear-gradient(240deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%),
-            url(../img/sec-6__arrow1.png);
+           url(../img/sec-6__arrow1.png);
             background-repeat: no-repeat,
             no-repeat;
             background-position: center center, 95% 5%;
@@ -107,11 +130,12 @@
             background: -webkit-linear-gradient(30deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
             background: -o-linear-gradient(30deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%);
             background: linear-gradient(120deg, transparent 37%, rgba(255, 255, 2555, 0.2) 37%),
-            url(../img/sec-6__arrow2.png);
-            background-repeat: no-repeat, no-repeat;
+           url(../img/sec-6__arrow2.png); //sec-6__arrow2
+            background-repeat: no-repeat;
             background-position: center center, 5% 5%;
-             padding-top: 65px;
+            padding-top: 65px;
             text-align: right;
+           
             
             span {
                  line-height: 1;
@@ -162,6 +186,11 @@
         .filippov {
             background-image: url(../img/filippov.png);
         }
+        
+        .pritvorova {
+            background-image: url(../img/pritvorova.jpg);
+            background-size: cover;
+        }
 
 
         div {
@@ -200,14 +229,10 @@
         
         
         
-        .sec-6__block1, .sec-6__block2, .sec-6__block4 {
+        .sec-6__block1, .sec-6__block2, .sec-6__block4, .sec-6__block3 {
             justify-content: space-around;
         }
         
-        
-        .sec-6__block3 {
-            justify-content: space-between;
-        }
     }
 }
 
