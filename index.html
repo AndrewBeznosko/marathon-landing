@@ -48,58 +48,36 @@
 
             <div class="row justify-content-between align-items-end content-row sec-1_flex">
                 <div class="col-xl-4 col-md-6 col-sm-12">
-                    <div class="form-wrapper">
-                        <form action="">
-                            <h5>Станьте участником наших программ</h5>
-                            <div class="form-row align-items-center">
-                                <!--
-                                <div class="col-12">
-                                    <label class="sr-only" for="inlineFormInput">Name</label>
-                                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="admin@challenge.com">
+                    <div class="form-wrapp">
+                            <h3>Станьте участником наших программ</h3>  
+                                <div class="btn-wrapp">
+                                   <a class="form-btn comein" href="">ВОЙТИ</a>
+                                   <a class="form-btn registration" href="">ЗАРЕГИСТРИРОВАТЬСЯ</a>
                                 </div>
-                                <div class="col-12">
-                                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                                    <input type="password" class="form-control" id="inlineFormInputGroup" placeholder="Пароль">
+                                <h3>Вы участник наших программ</h3>
+                                <div class="btn-wrapp">  
+                                   <a class="form-btn marathon-list" href="">СПИСОК ВАШИХ МАРАФОНОВ</a>
+                                    <a class="form-btn exit" href="">ВЫЙТИ</a>
                                 </div>
-                                -->
-                                <div class="col-12 text-center">
-                                    <button type="submit" class="btn btn-light" style="background-color: #e0e0e0;">Войти</button>
-                                    <button type="submit" class="btn" style="background-color: #78cdd9; color:#fff;">Зарегистрироваться</button>
-                                </div>
-                                <!--
-                                <div class="col-12">
-                                    <div class="form-check mb-2" style="width: 100%">
-                                        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                        <span class="form-check-label" for="autoSizingCheck">
-                                            Подписываясь вы соглашаетесь на обработку <a href="">персональных данных</a> и ринимаете нашу <a href="">политику конфиденциальности</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                
-                                -->
-                            </div>
-
-
-                        </form>
                     </div>
                 </div>
                 <div class="col-xl-7 col-md-6 col-sm-12">
-                   
-                             <!-- MODAL -->
 
-                                <div class="modal fade sec-1_modal" id="sec-1_modal__video" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                                        <div class="modal-content">
-                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <!-- MODAL -->
+
+                    <div class="modal fade sec-1_modal" id="sec-1_modal__video" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                         </button>
-                                        <div id="youtube_sec-1"></div>
-                                       
-                                        </div>
-                                    </div>
-                                </div>
+                                <div id="youtube_sec-1"></div>
 
-                   
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="carusel-wrapper">
                         <div id="sec-1__carusel" class="carusel">
                             <div class="item">
@@ -158,8 +136,8 @@
             <div class="sec_title">
                 <h2 class="title">Актуальные программы</h2>
             </div>
-
-            <div id="sec-2__carusel" class="row actual_marathons">
+            <!-- вставить для работы слайдера id="sec-2__carusel" -->
+            <div  class="row actual_marathons justify-content-center">
                 <div class="col-4">
                     <div class="marathon_wrapper marathon_wrapper1">
                         <div class="actual_marathons_block">
@@ -173,16 +151,9 @@
                                 <span class="year_date">2018</span>
 
                                 <a href="" class="btn btn-primary" style="background-color: #294486;" data-toggle="modal" data-target="#exampleModalCenter">КАК ВСЕ ПРОШЛО</a>
-
                             </div>
-
-
-
                         </div>
                     </div>
-
-
-
                 </div>
                 <div class="col-4">
                     <div class="marathon_wrapper marathon_wrapper2">
@@ -209,6 +180,26 @@
                                 </div>
                             </div>
                             <div class="marathons_bottom">
+                                <span class="month_date" style="opacity:0">30 апреля-13 июня</span>
+                                <span class="month_date" style="position:absolute; top:10px;">Обучающий курс по книге Гила Петерсила</span>
+
+                                <a href="" style="background-color: #952d77; padding-left:22px; padding-right:22px; width:80%;">СКОРО</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+<!--
+                  <div class="col-4">
+                    <div class="marathon_wrapper marathon_wrapper3 disabled">
+                        <div class="actual_marathons_block ">
+                            <div class="marathons_top" style="background-image: url(img/marathon_bg3.png); ">
+                                <div class="cover-bg" style=" background: rgba(170,41,141,0.6);">
+                                    <span>Новый код</span> <span><b>нетворкинга</b></span>
+                                </div>
+                            </div>
+                            <div class="marathons_bottom">
                                 <span class="month_date" style="opacity:0" >30 апреля-13 июня</span>
                                  <span class="month_date" style="position:absolute; top:10px;" >Обучающий курс по книге Гила Петерсила</span>
               
@@ -216,24 +207,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="marathon_wrapper">
-                        <div class="actual_marathons_block">
-                            <div class="marathons_top">
-                                <div class="cover-bg" style=" background: rgba(170,41,141,0.6);">
-                                    <span>ChallengeME</span> <span>ПЕРВЫЙ ПОТОК</span>
-                                </div>
-                            </div>
-                            <div class="marathons_bottom">
-                                <span class="month_date">30 апреля-13 июня</span>
-                                <span class="year_date">2018</span>
-                                <a href="" style="background-color: #294486;">КАК ВСЕ ПРОШЛО</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               </div>
+-->
 
 
 
@@ -340,49 +315,77 @@
                 <h2 class="title">Отзывы участников наших проектов</h2>
             </div>
             <div class="sec-5_slider" id="sec-5_slider">
+
                 <div class="sec-5_block">
-                    <div class="sec-5_block__top"></div>
+                    <div class="sec-5_block__top">
+                        <iframe id="sec-5_video1" width="100%" height="100%" src="https://www.youtube.com/embed/iM4GnTIqrS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <!--                     <div class="sec-5_video" id="sec-5_video1"></div>-->
+                    </div>
                     <div class="sec-5_block__bottom">
                         <div class="bottom_left"></div>
-                        <span class="sec-5_descr">Предложенный список просто шикарный! 
-Многие действия откликаются во мне, но как обычно пока не увидишь или не станешь думать об этом, в голову и не придет, что так можно grow up my Energy! Что в такие моменты моя энергия поднимается, и многие из этих вещей я делал и они работали!</span><br><br>
-                        <span style="color:#000000;"><b>Антон Комбаров</b> (Intel ltd.)</span>
+                        <span class="sec-5_descr">"Я меняю свое Настоящее для того, чтобы мое Будущее трансформировалось в то, что мне хочется.
+Марафон стал платформой, поддерживающей мое решение изменить свою жизнь."</span><br><br>
+                        <span style="color:#000000;"><b>Marvakh Irina</b></span>
                     </div>
                 </div>
                 <div class="sec-5_block">
-                    <div class="sec-5_block__top"></div>
+
+                    <div class="sec-5_block__top">
+                        <iframe id="sec-5_video2" width="100%" height="100%" src="https://www.youtube.com/embed/57WJ4dKqpfQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <!--                        <div class="sec-5_video" id="sec-5_video2"></div>-->
+                    </div>
                     <div class="sec-5_block__bottom">
                         <div class="bottom_left"></div>
-                        <span class="sec-5_descr">Предложенный список просто шикарный! 
-Многие действия откликаются во мне, но как обычно пока не увидишь или не станешь думать об этом, в голову и не придет, что так можно grow up my Energy! Что в такие моменты моя энергия поднимается, и многие из этих вещей я делал и они работали!</span><br><br>
-                        <span style="color:#000000;"><b>Антон Комбаров</b> (Intel ltd.)</span>
+                        <span class="sec-5_descr">Если у вас уже есть цель в жизни, марафон станет той реактивной ракетой, которая выведет вас и вашу цель на невероятную орбиту достижений, о которых сейчас вы даже не мечтаете.</span><br><br>
+                        <span style="color:#000000;"><b>Ermakova Oxana</b></span>
+                    </div>
+                </div>
+
+                <div class="sec-5_block">
+                    <div class="sec-5_block__top">
+                        <iframe id="sec-5_video3" width="100%" height="100%" src="https://www.youtube.com/embed/_yfqtgUKLOk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <!--                     <div class="sec-5_video" id="sec-5_video3"></div>-->
+                    </div>
+                    <div class="sec-5_block__bottom">
+                        <div class="bottom_left"></div>
+                        <span class="sec-5_descr">Я научилась справляться со внутренними сложностями, которые тревожными голосами звучалив  моей голове: "Ой, как страшно!", "Смогу ли я?", "Что, если не получится?". Но тогда я спросила себя: "А что, если да?"... В этом и оказалась наибольшая ценность.</span><br><br>
+                        <span style="color:#000000;"><b>Ilashchuk Olesia</b> </span>
                     </div>
                 </div>
                 <div class="sec-5_block">
-                    <div class="sec-5_block__top"></div>
+
+                    <div class="sec-5_block__top">
+                        <iframe id="sec-5_video4" width="100%" height="100%" src="https://www.youtube.com/embed/nJuaodqIGHI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <!--                     <div class="sec-5_video" id="sec-5_video4"></div>-->
+                    </div>
                     <div class="sec-5_block__bottom">
                         <div class="bottom_left"></div>
-                        <span class="sec-5_descr">Предложенный список просто шикарный! 
-Многие действия откликаются во мне, но как обычно пока не увидишь или не станешь думать об этом, в голову и не придет, что так можно grow up my Energy! Что в такие моменты моя энергия поднимается, и многие из этих вещей я делал и они работали!</span><br><br>
-                        <span style="color:#000000;"><b>Антон Комбаров</b> (Intel ltd.)</span>
+                        <span class="sec-5_descr">Интересный получился марафон. Для меня наиболее важным стало именно то, что задания нужно делать каждый день. Это позволяет выработать в себе самодисциплину, которая может быть очень полезна в разных делах. </span><br><br>
+                        <span style="color:#000000;"><b>Gilemkhanov Bulat</b> </span>
                     </div>
                 </div>
                 <div class="sec-5_block">
-                    <div class="sec-5_block__top"></div>
+
+                    <div class="sec-5_block__top">
+                        <iframe id="sec-5_video5" width="100%" height="100%" src="https://www.youtube.com/embed/66PWPddYZH4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <!--                    <div class="sec-5_video" id="sec-5_video5"></div>-->
+                    </div>
                     <div class="sec-5_block__bottom">
                         <div class="bottom_left"></div>
-                        <span class="sec-5_descr">Предложенный список просто шикарный! 
-Многие действия откликаются во мне, но как обычно пока не увидишь или не станешь думать об этом, в голову и не придет, что так можно grow up my Energy! Что в такие моменты моя энергия поднимается, и многие из этих вещей я делал и они работали!</span><br><br>
-                        <span style="color:#000000;"><b>Антон Комбаров</b> (Intel ltd.)</span>
+                        <span class="sec-5_descr">Марафон дал мне очень многое. Я  посмотрел и увидел себя с другой стороны - увидел себя там, где я могу быть, то, каким я могу стать.</span><br><br>
+                        <span style="color:#000000;"><b>Borisov Mike</b></span>
                     </div>
                 </div>
                 <div class="sec-5_block">
-                    <div class="sec-5_block__top"></div>
+
+                    <div class="sec-5_block__top">
+                        <iframe id="sec-5_video6" width="100%" height="100%" src="https://www.youtube.com/embed/iGdaNKKt0p0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <!--                     <div class="sec-5_video" id="sec-5_video6"></div>-->
+                    </div>
                     <div class="sec-5_block__bottom">
                         <div class="bottom_left"></div>
-                        <span class="sec-5_descr">Предложенный список просто шикарный! 
-Многие действия откликаются во мне, но как обычно пока не увидишь или не станешь думать об этом, в голову и не придет, что так можно grow up my Energy! Что в такие моменты моя энергия поднимается, и многие из этих вещей я делал и они работали!</span><br><br>
-                        <span style="color:#000000;"><b>Антон Комбаров</b> (Intel ltd.)</span>
+                        <span class="sec-5_descr">Та цель, которую я поставил себе в начале марафона - научитсья приоритезировать - я достиг ее! Спасибо Гилу за прекрасную возможность использовать такой инструмент! </span><br><br>
+                        <span style="color:#000000;"><b>Lashkevich Konstantin</b> </span>
                     </div>
                 </div>
             </div>
@@ -396,32 +399,61 @@
 
         <div class="container">
             <div class="sec_title">
-                <h2 class="title">Команда коучей</h2>
+                <h2 class="title">Наша команда коучей</h2>
             </div>
             <span class="bg_text">НАШИ КОУЧИ</span>
             <div class="row">
 
-                <div class="sec-6__block1">
+                <div class="sec-6__block1">    
+                        <div class="block-flex__wrapper">
+                           <div class="descr"><b>Мария Плахотник</b><br>Коуч, бизнес-тренер <br> Erickson College International <br> Коучинг для собственников бизнеса и руководителей, коучинг стартапов, коучинг проектных команд</div>
+                            <div class="block11__img plahotnik"></div>
+                            <div class="block__descr sec-6_block__descr2"><span>Мария <b>Плахотник</b></span></div>
+                        </div>
                     <div class="block-flex__wrapper">
-                        <div class="block11__img plahotnik"></div>
-                        <div class="block__descr sec-6_block__descr2"><span>Мария <b>Плахотник</b></span></div>
-                    </div>
-                    <div class="block-flex__wrapper">
+                       <div class="descr"><b>Андрей Коваль</b><br>Бизнес-тренер <br> Академия бизнес решений<br> Базовая степень MBA (Management & Marketing Universal Business School) <br> Продажи, переговоры, личностный рост</div>
                         <div class="block__descr sec-6_block__descr1"><span>Андрей <b>Коваль</b></span></div>
                         <div class="block12__img koval"></div>
+                    </div>
+                    <div class="block-flex__wrapper">
+                       <div class="descr"><b>Александра Притворова</b><br>Коуч, магистр психологического консультирования, гипнотерапевт <br>Erickson College International <br> Отношения, общение, жизненное предназначение и миссия"</div>
+                        <div class="block__descr sec-6_block__descr1"><span>Александра <b>Притворова</b></span></div>
+                        <div class="block12__img pritvorova"></div>
                     </div>
                 </div>
 
                 <div class="sec-6__block2">
                     <div class="block-flex__wrapper block-flex__wrapper21">
+                       <div class="descr"><b>Мария Абрамчук</b><br>Профессиональный психолог, модератор, фасилитатор, бизнес-тренер <br>
+                            Эффективность в работе команд (бизнес, семья)
+                            Резонансное лидерство для руководителей. Построение резонансных отношений с окружающими для супругов и родителей. 
+                            Экологичные продажи. Экологичный менеджмент. "</div>
                         <div class="block21__img abramchuk"></div>
                         <div class="block__descr sec-6_block__descr2"><span>Мария <b>Абрамчук</b></span></div>
                     </div>
                     <div class="block-flex__wrapper">
+                       <div class="descr"><b>Алан Бигулов</b><br>Коуч <br>
+                            Философское консультирование<br>
+                            Мировоззренческое консультирование<br> <br>
+
+                            Коучинг по самодисциплине <br>
+                            Избавление от вредных привычек<br>
+                            Избавление от ограничивающих убеждений и установок<br>
+                            Коучинг по здоровому питанию <br>
+                            Коррекция пищевого поведения и избавление от лишнего веса<br>
+                            Коучинг мотивации изучения иностранных языков<br>
+                            Снятие языкового барьера
+                      </div>
                         <div class="block__descr sec-6_block__descr1"><span>Алан <b>Бигулов</b></span></div>
                         <div class="block22__img bigulov"></div>
                     </div>
                     <div class="block-flex__wrapper">
+                       <div class="descr">
+                           <b>Валентина Нелипа</b><br>
+                            Коуч <br>
+                            Лайф Коучинг <br>
+                            Руководитель Бизнес Подразделений сфере FMCG. Тренер Команд Продаж.
+                       </div>
                         <div class="block__descr sec-6_block__descr1"><span>Валентина <b>Нелипа</b></span></div>
                         <div class="block23__img nelipa"></div>
                     </div>
@@ -429,29 +461,67 @@
 
                 <div class="sec-6__block3">
                     <div class="block-flex__wrapper block-flex__wrapper31">
+                       <div class="descr">
+                            <b>Наталья Сапрыкина</b><br>
+                             Коуч <br>
+                             НЛП-консультирование <br>
+                             Смена сферы деятельности, реализация мечты, достижение целей (личных и бизнес), возврат себя в ресурсное состояние
+                        </div>
                         <div class="block31__img saprikina"></div>
                         <div class="block__descr sec-6_block__descr2"><span>Наталья <b>Сапрыкина</b></span></div>
                     </div>
                     <div class="block-flex__wrapper">
                         <div class="block32__img romanishina"></div>
+                        <div class="descr">
+                           <b>Алёна Романишина</b><br>
+                            Коуч, бизнес-тренер <br>
+                            Erickson College International <br>
+                            Финансовый коучинг,  лайф-коучинг, коучинг личной эффективности."
+                         </div>
                         <div class="block__descr sec-6_block__descr2"><span>Алёна <b>Романишина</b></span></div>
                     </div>
                     <div class="block-flex__wrapper block-flex__wrapper33">
-                        <div class="block__descr sec-6_block__descr1"><span>Валентина <b>Нелипа</b></span></div>
+                       <div class="descr">
+                           <b>Анна Палийчукт</b><br>
+                            Коуч, Фасилитатор, Бизнес-тренер <br>
+                            Интегральная коучинг школа "Живое Дело" <br>
+                            Бизнес-коучинг, Life-коучинг
+                       </div>
+                        <div class="block__descr sec-6_block__descr1"><span>Анна <b>Палийчукт</b></span></div>
                         <div class="block33__img nelipa2"></div>
                     </div>
                 </div>
 
                 <div class="sec-6__block4">
                     <div class="block-flex__wrapper block-flex__wrapper41">
+                       <div class="descr">
+                           <b>Лора Гончаренко</b><br>
+                            Коуч <br>
+                            Erickson College International <br>
+                            Смена профессиональной деятельности, увеличение вовлечённости в бизнес, выстраивание партнёрских отношений,  стартап в инфобизнесе (раскрутка тренера, создание программ, сопровождение групп), систематизация бизнеса, создание команд в малом и среднем бизнесе, поиск себя, жизнь в кайф.
+                      </div>
                         <div class="block41__img goncharenko"></div>
                         <div class="block__descr sec-6_block__descr2"><span>Лора <b>Гончаренко</b></span></div>
                     </div>
                     <div class="block-flex__wrapper">
+                       <div class="descr">
+                           <b>Диана Степанова</b><br>
+                            Коуч PCC <br><br>
+                            Erickson College International  <br><br>
+                            Коучинг проектов: старт и развитие проектов <br>
+                            Коучинг коммуникаций (успешные переговоры, яркое интервью)  <br>
+                            Коучинг состояний (найти новые смыслы, самореализация, вдохновение, энергия,осознанность).
+                        </div>
                         <div class="block42__img stepanova"></div>
                         <div class="block__descr sec-6_block__descr2"><span>Диана <b>Степанова</b></span></div>
                     </div>
                     <div class="block-flex__wrapper">
+                       <div class="descr">
+                           <b>Игнат Филиппов</b><br>
+                            Коучинг, бизнес консультирование 
+                            KMBS Киево-Могилянская Бизнес-Школа <br><br>
+                            Бизнес-коучинг, Life-коучинг
+                       </div>
                         <div class="block43__img filippov"></div>
                         <div class="block__descr sec-6_block__descr2"><span>Игнат <b>Филиппов</b></span></div>
                     </div>
@@ -464,7 +534,7 @@
     </section>
     <!-- END sec-6 -->
 
-   <!--
+    <!--
    
     <section class="sec sec-7">
         <div class="container">
@@ -527,7 +597,7 @@
     </section>
     
     <!-- END sec-7 -->
-    
+
 
     <section class="sec sec-8" id="sec-8">
         <div class="container">
@@ -590,7 +660,7 @@
                             <a class="facebook"></a>
                             <a class="vk"></a>
                             <a class="instagram"></a>
-                            <a class="youtube"></a>
+                            <a class="youtube" href="https://www.youtube.com/channel/UCgyZ9vn0ozLU8p0dZPJqSLg/featured" target="_blank"></a>
                         </div>
                     </div>
                 </div>
@@ -606,6 +676,47 @@
             </div>
         </div>
 
+       <style>
+    .form-wrapp h3 {
+        font-size: 31px;
+        font-weight: 900;
+        color: #4b4b4e;
+    }   
+    
+    .form-btn {
+        display: inline-block;
+        background-color: aliceblue;
+        padding: 10px 23px;
+        border-radius: 8px;
+        margin-right: 20px;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    
+    .comein, .exit {
+        background-color: #efeff0;
+        color: #4b4b4e;
+    }
+    
+    .registration, .marathon-list {
+        background-color: #5ea9c9;
+        color: #fff;
+    }
+    
+    @media screen and (max-width: 992px)  {
+
+        .marathon-list {
+          margin-bottom: 10px;
+        }
+    }
+           
+           @media screen and (max-width: 375px)  {
+               .comein {
+                   margin-bottom: 10px;
+               }
+           }
+</style>
+       
         <!-- END container -->
     </footer>
     <!-- END footer -->
@@ -670,34 +781,39 @@
             }]
         });
 
-        $('#sec-2__carusel').slick({
-            dots: false,
-            arrows: true,
-            infinite: true,
-            speed: 600,
-            slidesToShow: 3,
-            responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        dots: true,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
+             $('#sec-2__carusel').slick({
+                    dots: false,
+                    arrows: true,
+                    infinite: true,
+                    speed: 600,
+                    draggable: true,
+                    slidesToShow: 3,
+                    responsive: [{
+                            breakpoint: 768,
+                            settings: {
+                                arrows: false,
+                                draggable: true,
+                                dots: true,
+                                centerMode: true,
+                                centerPadding: '40px',
+                                slidesToShow: 1
+                            }
                 },
-                {
-                    breakpoint: 1000,
-                    settings: {
-                        arrows: true,
-                        centerMode: true,
-                        centerPadding: '200px',
-                        slidesToShow: 1
-                    }
+                        {
+                            breakpoint: 1000,
+                            settings: {
+                                arrows: true,
+                                draggable: true,
+                                centerMode: true,
+                                centerPadding: '200px',
+                                slidesToShow: 1
+                            }
                 }
             ]
 
-        });
+                });
+
+        
 
         $('#sec-5_slider').slick({
             // centerMode: true,
@@ -718,7 +834,7 @@
 
         });
     </script>
-    
+
 </body>
 
 </html>

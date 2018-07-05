@@ -23,6 +23,7 @@
     
      background-image: url(../img/sec-1__bg.png);
         background-size: cover;
+    //background-position: center center;
 
     .container {
 //        background-image: url(../img/sec-1__bg.png);
@@ -131,7 +132,6 @@
                 z-index: 1000;
                 width: 290px;
                 height: 155px;
-                background-color: green;
                 background-image: url(../img/sec-1_play__button.png), url(../img/sec-1_video.png);
                 background-position: center center, center center;
                 background-size: auto, cover;  
